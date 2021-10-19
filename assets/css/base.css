@@ -218,7 +218,7 @@ button {
     transition: all 0.3s;
 }
 
-footer button.footer-btn, .contact-us-items form button , section.comment button {
+footer button.footer-btn, .contact-us-items form button, section.comment button {
     margin-inline-start: 40px;
     color: white;
     height: 40px;
@@ -232,12 +232,12 @@ footer button.footer-btn, .contact-us-items form button , section.comment button
     border: 1px solid rgba(87, 207, 217, 0.31);
 }
 
-footer button.footer-btn:hover, .contact-us-items form button:hover , section.comment button:hover {
+footer button.footer-btn:hover, .contact-us-items form button:hover, section.comment button:hover {
 
     border-bottom: 2px solid #326b82;
 }
 
-.contact-us-items form button , section.comment button {
+.contact-us-items form button, section.comment button {
     margin: 0 auto !important;
     font-size: 15px;
     height: 50px;
@@ -548,7 +548,7 @@ section.blog .over-text {
 
 }
 
-.box .date {
+.box .date, section.Recent-Comments .date {
     font-size: 13px;
 }
 
@@ -932,6 +932,7 @@ section.item-cards .item-card .main .num {
     padding: 0;
     cursor: pointer;
 }
+
 /**/
 
 /*single-page*/
@@ -1022,14 +1023,18 @@ section.details .category .item, section.details .tags .item {
     font-size: 14px;
 }
 
-section.details .border {
+section.details .border, section.Recent-Comments .border {
     width: 100%;
     height: 1px;
     background-color: #707070;
     border: 0 !important;
 }
+section.Recent-Comments .border{
+    height: 2px;
+    background-color: #70707063;
+}
 
-section.details i.fill {
+section.details i.fill, section.Recent-Comments i.fill {
     color: coral;
 }
 
@@ -1037,3 +1042,7 @@ section.details .social-i i {
     font-size: 25px;
 }
 
+section.Recent-Comments .image-c {
+    width: 65px;
+    margin-right: 30px;
+}
