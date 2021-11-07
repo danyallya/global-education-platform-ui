@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/base.css"/>
     <link rel="stylesheet" href="assets/css/fontello.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
 
 </head>
 
@@ -12,9 +13,9 @@
 <div class="container-fluid">
     <div class="container">
         <header class="d-flex align-items-center ">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-md-2 d-flex align-items-center p-0">
+            <div class="col-md-12 s-100">
+                <div class="row d-flex justify-content-around align-items-center">
+                    <div class="col-md-2 s-50 d-flex align-items-center p-0">
                         <div class="logo">
                             <img src="assets/images/logo.png">
 
@@ -24,35 +25,46 @@
                         </div>
 
                     </div>
-                    <div class="col-md-7 d-flex align-items-center justify-content-around">
-                        <div class="header-item pointer relative active ">
+                    <div class="col-md-7 s-50 d-flex align-items-center justify-content-around j-c-sm-end">
+                        <div class="header-item pointer relative active res-non">
                             How It Works?
                         </div>
-                        <div class="header-item pointer relative">
+                        <div class="header-item pointer relative res-non">
                             Courses
                         </div>
-                        <div class="header-item pointer relative">
+                        <div class="header-item pointer relative res-non">
                             Find Tutors
                         </div>
-                        <div class="header-item pointer relative">
+                        <div class="header-item pointer relative res-non">
                             categories
                         </div>
-                        <div class="header-item pointer relative">
+                        <div class="header-item pointer relative ">
                             English / USD
+                            <i class="demo-icon icon-down-open"></i>
                         </div>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-3 res-non">
+                        <div class="row d-flex justify-content-around">
+                            <button class="header-btn">
+                                Become A Tutor
+                            </button>
+                            <button class="header-btn gold">
+                                Login/Signup
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
     </div>
+
     <div class="row  d-flex justify-content-center pr-3 pl-3">
-        <div class="col-12 ">
+        <div class="col-12 s-100">
             <section class="sec-one about blog relative">
 
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-10 col-sm-12">
+                    <div class="col-md-10 col-sm-12 s-100">
                         <div class="left-side relative d-flex flex-column mt-5 pt-5 ">
                             <div class="header-text text-center c-orange">
                                 Courses
@@ -77,7 +89,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-11 mb-3">
+                    <div class="col-md-11 mb-3 res-non">
                         <div class="box">
                             <form>
                                 <div class="row d-flex justify-content-start">
@@ -128,7 +140,7 @@
 
 
                     </div>
-                    <div class="col-md-10 mb-1">
+                    <div class="col-md-10 mb-1 res-non">
                         <div class="row d-flex justify-content-between filter-tu align-items-center">
                             <div class="custom-checkbox-cu">
                                 <ul>
@@ -188,8 +200,18 @@
 
 
                     </div>
-
-                    <div class="col-md-10">
+                    <div class="col-md-12 s-100 ">
+                        <div class="res-menu mb-4 d-none res-block">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <button class="text-center d-flex align-items-center">
+                                    <i class="demo-icon icon-path-11"></i>
+                                    More Options
+                                </button>
+                                <div class="border flex-grow-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 s-100">
                         <div class="row d-flex flex-column">
                             <div class="tutors-head-items align-items-center d-flex justify-content-around mb-2">
                                 <div class="flex-fill b-r"></div>
@@ -230,22 +252,29 @@
 
 
         </div>
-        <div class="col-md-10 mb-5">
+        <div class="col-md-10 mb-5 s-100">
             <div class="row d-flex justify-content-start">
+
                 <div class="col-md-6 mb-3">
                     <div class="box d-flex justify-content-start pr-5  courses-card blue  relative mb-3 overflow-hidden">
-                        <div class="col-md-4 no-pad mr-2">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
                             <div class="image relative full-h">
                                 <img src="assets/images/Tutors.jpg" class="full full-h">
                             </div>
                         </div>
-                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap">
-                            <div class="col-md-12 small text-left">
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
                                 <a href="">
                                     This Course Is Pinned
                                 </a>
                             </div>
-                            <div class=" text text-left">
+                            <div class=" text text-left res-ma">
                                 Lorem Ipsum Dolor Sit Amet
                                 <div class=" d-flex justify-content-between mt-1">
                                     <a href="" class="small">
@@ -290,8 +319,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end">
-                                <button class="">
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
                                     Cours Info
                                 </button>
 
@@ -302,18 +331,24 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <div class="box d-flex justify-content-start pr-5  courses-card gold  relative mb-3 overflow-hidden">
-                        <div class="col-md-4 no-pad mr-2">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
                             <div class="image relative full-h">
                                 <img src="assets/images/Tutors.jpg" class="full full-h">
                             </div>
                         </div>
-                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap">
-                            <div class="col-md-12 small text-left">
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
                                 <a href="">
                                     This Course Is Pinned
                                 </a>
                             </div>
-                            <div class=" text text-left">
+                            <div class=" text text-left res-ma">
                                 Lorem Ipsum Dolor Sit Amet
                                 <div class=" d-flex justify-content-between mt-1">
                                     <a href="" class="small">
@@ -358,77 +393,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end">
-                                <button class="">
-                                    Cours Info
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-md-6 mb-3">
-                    <div class="box d-flex justify-content-start pr-5  courses-card  relative mb-3 overflow-hidden">
-                        <div class="col-md-4 no-pad mr-2">
-                            <div class="image relative full-h">
-                                <img src="assets/images/Tutors.jpg" class="full full-h">
-                            </div>
-                        </div>
-                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap">
-                            <div class="col-md-12 small text-left">
-                                <a href="">
-                                    This Course Is Pinned
-                                </a>
-                            </div>
-                            <div class=" text text-left">
-                                Lorem Ipsum Dolor Sit Amet
-                                <div class=" d-flex justify-content-between mt-1">
-                                    <a href="" class="small">
-                                        For Biginner</a>
-                                    <div class="small gold-color">Pending</div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 no-pad mt-3">
-                                <h6 class="text-justify text two-line">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci.
-                                    PraesentLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci.
-                                    Praesent
-                                </h6>
-                            </div>
-                            <div class="col-md-12 no-pad mt-4 d-flex justify-content-between">
-                                <div>
-                                    <i class="demo-icon icon-path-6"></i>
-                                    <span>
-                                        23 $ Cost
-                                    </span>
-                                </div>
-                                <div>
-                                    <i class="demo-icon icon-path-13"></i>
-                                    <span>
-                                        23 $ Cost
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div class="col-md-12 no-pad  d-flex justify-content-between">
-                                <div>
-                                    <i class="demo-icon icon-path-17"></i>
-                                    <span>
-                                        23 $ Cost
-                                    </span>
-                                </div>
-                                <div>
-                                    <i class="demo-icon icon-path-110"></i>
-                                    <span>
-                                        23 $ Cost
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end">
-                                <button class="">
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
                                     Cours Info
                                 </button>
 
@@ -438,19 +404,25 @@
 
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="box d-flex justify-content-start pr-5  courses-card gold  relative mb-3 overflow-hidden">
-                        <div class="col-md-4 no-pad mr-2">
+                    <div class="box d-flex justify-content-start pr-5  courses-card blue  relative mb-3 overflow-hidden">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
                             <div class="image relative full-h">
                                 <img src="assets/images/Tutors.jpg" class="full full-h">
                             </div>
                         </div>
-                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap">
-                            <div class="col-md-12 small text-left">
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
                                 <a href="">
                                     This Course Is Pinned
                                 </a>
                             </div>
-                            <div class=" text text-left">
+                            <div class=" text text-left res-ma">
                                 Lorem Ipsum Dolor Sit Amet
                                 <div class=" d-flex justify-content-between mt-1">
                                     <a href="" class="small">
@@ -495,8 +467,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end">
-                                <button class="">
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
                                     Cours Info
                                 </button>
 
@@ -506,19 +478,25 @@
 
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="box d-flex justify-content-start pr-5  courses-card  relative mb-3 overflow-hidden">
-                        <div class="col-md-4 no-pad mr-2">
+                    <div class="box d-flex justify-content-start pr-5  courses-card blue  relative mb-3 overflow-hidden">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
                             <div class="image relative full-h">
                                 <img src="assets/images/Tutors.jpg" class="full full-h">
                             </div>
                         </div>
-                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap">
-                            <div class="col-md-12 small text-left">
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
                                 <a href="">
                                     This Course Is Pinned
                                 </a>
                             </div>
-                            <div class=" text text-left">
+                            <div class=" text text-left res-ma">
                                 Lorem Ipsum Dolor Sit Amet
                                 <div class=" d-flex justify-content-between mt-1">
                                     <a href="" class="small">
@@ -563,8 +541,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end">
-                                <button class="">
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
                                     Cours Info
                                 </button>
 
@@ -574,19 +552,25 @@
 
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="box d-flex justify-content-start pr-5  courses-card  relative mb-3 overflow-hidden">
-                        <div class="col-md-4 no-pad mr-2">
+                    <div class="box d-flex justify-content-start pr-5  courses-card blue  relative mb-3 overflow-hidden">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
                             <div class="image relative full-h">
                                 <img src="assets/images/Tutors.jpg" class="full full-h">
                             </div>
                         </div>
-                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap">
-                            <div class="col-md-12 small text-left">
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
                                 <a href="">
                                     This Course Is Pinned
                                 </a>
                             </div>
-                            <div class=" text text-left">
+                            <div class=" text text-left res-ma">
                                 Lorem Ipsum Dolor Sit Amet
                                 <div class=" d-flex justify-content-between mt-1">
                                     <a href="" class="small">
@@ -631,8 +615,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end">
-                                <button class="">
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
                                     Cours Info
                                 </button>
 
@@ -641,6 +625,155 @@
                     </div>
 
                 </div>
+                <div class="col-md-6 mb-3">
+                    <div class="box d-flex justify-content-start pr-5  courses-card blue  relative mb-3 overflow-hidden">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
+                            <div class="image relative full-h">
+                                <img src="assets/images/Tutors.jpg" class="full full-h">
+                            </div>
+                        </div>
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
+                                <a href="">
+                                    This Course Is Pinned
+                                </a>
+                            </div>
+                            <div class=" text text-left res-ma">
+                                Lorem Ipsum Dolor Sit Amet
+                                <div class=" d-flex justify-content-between mt-1">
+                                    <a href="" class="small">
+                                        For Biginner</a>
+                                    <div class="small gold-color">Pending</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 no-pad mt-3">
+                                <h6 class="text-justify text two-line">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci.
+                                    PraesentLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci.
+                                    Praesent
+                                </h6>
+                            </div>
+                            <div class="col-md-12 no-pad mt-4 d-flex justify-content-between">
+                                <div>
+                                    <i class="demo-icon icon-path-6"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="demo-icon icon-path-13"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 no-pad  d-flex justify-content-between">
+                                <div>
+                                    <i class="demo-icon icon-path-17"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="demo-icon icon-path-110"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
+                                    Cours Info
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="box d-flex justify-content-start pr-5  courses-card blue  relative mb-3 overflow-hidden">
+                        <div class="col-md-12 small text-center d-none res-block">
+                            <a href="">
+                                This Course Is Pinned
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 no-pad mr-2 s-100">
+                            <div class="image relative full-h">
+                                <img src="assets/images/Tutors.jpg" class="full full-h">
+                            </div>
+                        </div>
+                        <div class="col-md-8 no-pad information d-flex  align-content-around flex-wrap s-100">
+                            <div class="col-md-12 small text-left res-t-center res-non">
+                                <a href="">
+                                    This Course Is Pinned
+                                </a>
+                            </div>
+                            <div class=" text text-left res-ma">
+                                Lorem Ipsum Dolor Sit Amet
+                                <div class=" d-flex justify-content-between mt-1">
+                                    <a href="" class="small">
+                                        For Biginner</a>
+                                    <div class="small gold-color">Pending</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 no-pad mt-3">
+                                <h6 class="text-justify text two-line">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci.
+                                    PraesentLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci.
+                                    Praesent
+                                </h6>
+                            </div>
+                            <div class="col-md-12 no-pad mt-4 d-flex justify-content-between">
+                                <div>
+                                    <i class="demo-icon icon-path-6"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="demo-icon icon-path-13"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 no-pad  d-flex justify-content-between">
+                                <div>
+                                    <i class="demo-icon icon-path-17"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+                                <div>
+                                    <i class="demo-icon icon-path-110"></i>
+                                    <span>
+                                        23 $ Cost
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 mt-3 no-pad d-flex justify-content-end ">
+                                <button class="res-ma">
+                                    Cours Info
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
         <div class="col-md-10">
@@ -648,7 +781,7 @@
                 <ul class="pagination d-flex justify-content-center align-items-center">
                     <li class="page-item disabled">
                         <a class="page-link" href="#" aria-label="Previous">
-                           <i class="demo-icon icon-path-65"></i>
+                            <i class="demo-icon icon-path-65"></i>
                         </a>
                     </li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -664,13 +797,51 @@
             </nav>
         </div>
 
+        <div class="box res-menu-box d-none res-block ">
+            <form>
+                <div class="row d-flex flex-column">
+                    <i class="demo-icon clo"></i>
+                    <div class="col-md-12">
+                        <div class="title-in text-left">
+                            Location
+                        </div>
+                        <input placeholder="Address Or Post Code">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="title-in text-left">
+                            Rate Per Hour
+                        </div>
+                        <select>
+
+
+                            <option value="1">10$ - 30$</option>
+                            <option value="2">Option 2</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="title-in text-left">
+                            Level
+                        </div>
+                        <select>
+
+
+                            <option value="1">Option</option>
+                            <option value="2">Option 2</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select></div>
+                </div>
+            </form>
+        </div>
 
     </div>
     <div class="row ">
         <footer class=" d-flex justify-content-center">
             <div class="col-10 pb-2 pt-5 ">
                 <div class="row">
-                    <div class="col-6 col-sm-12 d-flex align-items-center p-0 mb-5">
+                    <div class="col-md-6 s-100 d-flex align-items-center p-0 mb-5">
                         <div class="logo">
                             <img src="assets/images/logo-footer.png">
 
@@ -682,11 +853,11 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-start">
-                    <div class="col-md-5 col-sm-12">
+                    <div class="col-md-5 s-100">
                         <h6>
                             About What We Provide
                         </h6>
-                        <p>
+                        <p class="small-res">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci. Praesent
                             dignissim mollis arcu. Vivamus vitae diam sit amet neque semper ullamcorper at a velit.
                             Curabitur pulvinar sem at est vulputate, eget tincidunt dolor aliquam. Nullam sagittis
@@ -695,11 +866,11 @@
                             dolor. Cras eu sem id augue rhoncus suscipit vitae at elit.
                         </p>
                     </div>
-                    <div class="col-md-7 col-sm-12">
-                        <div class="row d-flex justify-content-start">
-                            <div class="col-md-8">
+                    <div class="col-md-7 s-100">
+                        <div class="row d-flex justify-content-start ">
+                            <div class="col-md-8 s-100">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 s-50">
                                         <ul class="list-items">
                                             <li>
                                                 <h6>Get To Know Us</h6>
@@ -712,7 +883,7 @@
                                             <li>Blog</li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 s-50">
                                         <ul class="list-items">
 
                                             <li>
@@ -730,35 +901,40 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li>
-                                        <h6>
-                                            Lets Keep In Touch
-                                        </h6>
-                                    </li>
-                                    <li class="social-i mb-5">
-                                        <i class="demo-icon icon-facebook-rect"></i>
-                                        <i class="demo-icon icon-linkedin-rect"></i>
-                                        <i class="demo-icon icon-instagram-1"></i>
+                            <div class="col-md-4 s-100">
+                                <div class="row">
+                                    <ul class="col-md-12 s-50">
+                                        <li>
+                                            <h6>
+                                                Lets Keep In Touch
+                                            </h6>
+                                        </li>
+                                        <li class="social-i mb-5">
+                                            <i class="demo-icon icon-facebook-rect"></i>
+                                            <i class="demo-icon icon-linkedin-rect"></i>
+                                            <i class="demo-icon icon-instagram-1"></i>
 
-                                    </li>
+                                        </li>
 
-                                </ul>
-                                <ul class="list-items">
-                                    <li>
-                                        <h6>
-                                            Support
-                                        </h6>
-                                    </li>
-                                    <li>
-                                        Need Any Help?
-                                    </li>
+                                    </ul>
+                                    <ul class="list-items col-md-12 s-50">
+                                        <li>
+                                            <h6>
+                                                Support
+                                            </h6>
+                                        </li>
+                                        <li class="res-non">
+                                            Need Any Help?
+                                        </li>
+                                        <li>
+                                            <button class="footer-btn">
+                                                Mail Us
+                                            </button>
 
-                                </ul>
-                                <button class="footer-btn">
-                                    Mail Us
-                                </button>
+                                        </li>
+
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>
@@ -766,9 +942,9 @@
                     <div class="line mb-4 mt-3"></div>
                 </div>
                 <div class="row d-flex justify-content-start">
-                    <div class="col-md-8">
+                    <div class="col-md-8 s-100">
                         <div class="row d-flex justify-content-start">
-                            <div class="col-md-3">
+                            <div class="col-md-3 s-50">
                                 <ul class="list-items no-pad">
                                     <li>
                                         <h6>Lorem Ipsum Dolor</h6>
@@ -781,7 +957,7 @@
                                     <li>Blog</li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 s-50">
                                 <ul class="list-items no-pad">
 
                                     <li>
@@ -799,7 +975,7 @@
 
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 s-50">
                                 <ul class="list-items no-pad">
                                     <li>
                                         <h6>Lorem Ipsum Dolor</h6>
@@ -812,7 +988,7 @@
                                     <li>Blog</li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 s-50">
                                 <ul class="list-items no-pad">
 
                                     <li>
@@ -865,9 +1041,9 @@
                     <div class="line mb-4 mt-3"></div>
 
                 </div>
-                <div class="row d-flex justify-content-start b-part">
+                <div class="row d-flex justify-content-start b-part align-items-center">
                     <i class="demo-icon icon-copyright"></i>
-                    <div class="text">Copyright 2021 Your Brand. All Rights Reserved.</div>
+                    <div class="text black">Copyright 2021 Your Brand. All Rights Reserved.</div>
                     <ul class="inline">
                         <li>Terms Of Servic</li>
                         <li>Privacy Policy</li>

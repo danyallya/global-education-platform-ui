@@ -82,32 +82,31 @@ body {
     position: relative;
 }
 
-body:before {
+.have-right-shadow:before {
     content: '';
-    position: fixed;
-    right: -25%;
+    position: absolute;
+    right: -20%;
     opacity: 0.7;
     bottom: 26%;
     background-image: url(../images/bg-r.png);
-    width: 800px;
+    width: 608px;
     background-size: 100%;
-    height: -webkit-fill-available;
+    height: 608px;
     z-index: -22;
     background-repeat: no-repeat;
 }
 
-body:after {
+.have-left-shadow:after {
     content: '';
-    position: fixed;
-    left: -25%;
+    position: absolute;
+    left: -20%;
     opacity: 0.7;
 
     bottom: -30%;
     background-image: url(../images/bg-l.png);
-    width: 800px;
-
+    width: 608px;
     background-size: 100%;
-    height: -webkit-fill-available;
+    height: 608px;
     z-index: -22;
     background-repeat: no-repeat;
 }
@@ -135,6 +134,10 @@ header .logo img {
     width: 50px;
 }
 
+header .header-item, header .header-item i {
+    color: #4B4B4B
+}
+
 header .logo-text {
     font-size: 17px;
     color: #3F9EB7;
@@ -153,7 +156,7 @@ header .logo-text {
 header .header-item:before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     width: 26px;
     height: 2px;
@@ -165,9 +168,125 @@ header .header-item.active:before {
     display: block;
 }
 
-header .header-item:hover {
+/*header .header-item:hover {*/
+/*transition: all 0.3s;*/
+/*color: #F59E1C;*/
+/*}*/
+
+header button.header-btn {
+    border: 1px solid #57CFD9;
+    border-radius: 10px;
+    padding: 8px 9px;
+    outline: 0;
+    color: #57CFD9;
+    transition: all 0.5s;
+    background-color: #8b451300;
+}
+
+header button.header-btn:hover {
+    background-color: #57CFD9;
+    color: white;
+}
+
+header button.gold {
+    background-image: linear-gradient(to right, #F7CA46, #F59E1C);
+    color: white;
+    border: none;
+}
+
+header button.blue {
+    background-color: #3F9EB7;
+    border: none;
+
+    color: white;
+}
+
+/*header .header-item:hover i {*/
+/*transition: all 0.3s;*/
+/*color: #F59E1C;*/
+/*}*/
+.contact-us-items form select, .box form select, .filter-tu select, header select {
+    background-position-x: 91%;
+}
+
+header .ln-items {
+    position: absolute;
+    width: 130%;
+    display: none;
+    left: -15%;
+    top: 40px;
+    background-color: #ffffff85;
+    padding: 14px 14px;
+    font-size: 10px;
+    z-index: 23;
+    backdrop-filter: blur(3px
+    );
+    border-radius: 26px;
+    box-shadow: inset 3px -1px 7px 0px white;
+}
+
+header .header-item.active .ln-items {
+    display: block;
+}
+
+header .cat-items-menu {
+    position: absolute;
+    width: 100%;
+    display: none;
+    left: 0;
+    top: 46px;
+    background-color: #ffffffc2;
+    padding: 20px 50px;
+    font-size: 10px;
+    z-index: 23;
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    border-radius: 26px;
+    box-shadow: inset 3px -1px 7px 0px white;
+
+}
+
+header .cat-items-menu.active {
+    display: block;
+}
+
+header .cat-items-menu .item {
+    font-size: 18px;
     transition: all 0.3s;
-    color: #F59E1C;
+}
+
+header .cat-items-menu .item i {
+    font-size: 25px;
+    color: #979696;
+
+    position: absolute;
+    right: 25px;
+}
+
+header .cat-items-menu .item.title {
+    border-right: 4px solid rgba(112, 112, 112, 0.51);
+
+}
+
+header .cat-items-menu .item:hover {
+    border-left: 4px solid #f59e1c;
+    border-bottom: none;
+
+}
+
+header .menu-icon {
+    transform: rotateY(
+            180deg);
+    color: #4B4B4B;
+    font-size: 20px;
+}
+
+header .ln-items select {
+    margin-top: 7px;
+    height: 35px;
+    padding-left: 12px;
+    padding-right: 11px;
+    margin-bottom: 10px !important;
 }
 
 /*footer*/
@@ -251,9 +370,11 @@ footer button.footer-btn, .box button, .contact-us-items form button, section.co
 .op-90 {
     background-color: rgba(255, 255, 255, 0.9);
 }
-footer .email .footer-btn{
+
+footer .email .footer-btn {
     margin-left: 15px;
 }
+
 footer button.footer-btn:hover, .box button.footer-btn:hover, .contact-us-items form button:hover, section.comment button:hover {
 
     border-bottom: 2px solid #326b82;
@@ -326,7 +447,7 @@ footer ul.inline li:nth-child(n+2):before {
 }
 
 footer .b-part .text {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 footer .b-part i {
@@ -651,7 +772,7 @@ section.blog .over-text {
 /*about-us*/
 .sec-one.about .over-text {
     position: absolute;
-    font-size: 180px;
+    font-size: 100pt;
     color: #00000005;
     left: 104px;
     top: 0;
@@ -661,7 +782,7 @@ section.blog .over-text {
 .sec-one.about .left-side .image {
     overflow: hidden;
     border-radius: 15px;
-    height: 300px;
+    /*height: 300px;*/
     box-shadow: 0 0 20px -6px #57cfd954;
 }
 
@@ -755,6 +876,14 @@ section.our-service .our-service-card {
     padding: 35px;
     overflow: hidden;
     border-radius: 10px;
+
+}
+
+.map-bac-over {
+    background-image: url("../images/obj.png");
+    background-size: 60%;
+    background-position: left top;
+    background-repeat: no-repeat;
 
 }
 
@@ -874,7 +1003,7 @@ section.item-cards .item-card .main {
     /* background-color: #ffffff87; */
     z-index: 2;
     position: relative;
-    position: absolute;
+    /*position: absolute;*/
     border-radius: 23px;
     right: 0;
     bottom: 0;
@@ -895,7 +1024,7 @@ section.item-cards .item-card .main .item {
     /* right: 0; */
     /* bottom: 0; */
     box-shadow: inset 0 0 20px 4px white;
-    height: 100%;
+    /*height: 100%;*/
     padding: 7% 6% 2% 23%;
     position: relative;
     z-index: 22;
@@ -914,7 +1043,8 @@ section.item-cards .item-card .main .num {
     position: absolute;
     font-size: 100px;
     color: #0000000d;
-    top: 0;
+    top: -50px;
+    left: 0;
 }
 
 .black-color {
@@ -1001,7 +1131,7 @@ section.item-cards .item-card .main .num {
 }
 
 .contact-us-items form input, .box form input, .contact-us-items form textarea,
-.contact-us-items form select, section.comment textarea, .box form textarea, .box form select, .filter-tu select {
+.contact-us-items form select, section.comment textarea, .box form textarea, .box form select, .filter-tu select, header select {
     height: 50px;
     border: 0;
     border-radius: 15px;
@@ -1019,7 +1149,7 @@ section.item-cards .item-card .main .num {
     min-height: 200px;
 }
 
-.contact-us-items form select, .box form select, .filter-tu select {
+.contact-us-items form select, .box form select, .filter-tu select, header select {
     background: url(../images/arrow.png) no-repeat right rgba(87, 207, 217, 0.1);
     background-size: 13px;
     -webkit-appearance: none;
@@ -1202,6 +1332,8 @@ section.details .social-i i {
 section.Recent-Comments .image-c {
     width: 65px;
     margin-right: 30px;
+    border-radius: 9px;
+    overflow: hidden;
 }
 
 /*login*/
@@ -1528,16 +1660,24 @@ section.Recent-Comments .image-c {
     box-shadow: 7px 0px 9px -5px #57cfd95c;
 }
 
-.tutors-card img.flag {
+img.flag {
     width: 22px;
     border-radius: 50%;
 }
 
-.tutors-card .information i, .courses-card .information i {
+.tutors-card .information i, .courses-card .information i, .card-team i {
     background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 23px;
+}
+
+.i-smaller {
+    font-size: 17px !important;
+}
+
+.sec-one .right-side.no-w {
+    width: unset !important;
 }
 
 .courses-card .information i {
@@ -1960,4 +2100,48 @@ button.blue-b-btn {
 /*sub-email-box*/
 .sub-email-box {
     margin-bottom: -50px;
+}
+
+/*over-text costum*/
+.over-text.ab-a {
+    top: -70px !important;
+}
+
+/*res0mneu*/
+.res-menu button {
+    background-color: #D9D9D9;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #4B4B4B;
+    font-size: 15px;
+    padding: 13px 12px;
+}
+
+.res-menu button i {
+    font-size: 22px;
+}
+
+.res-menu .border {
+    border-color: #707070 !important;
+}
+
+.login .over-text {
+    left: 0 !important;
+}
+
+/*res-menu-box*/
+.res-menu-box {
+    position: fixed;
+    left: -17px;
+    height: 100%;
+    overflow: scroll;
+    z-index: 555555;
+    /*transform: translateX(-110%);*/
+}
+
+.res-menu-box.active {
+    transform: translateX(-1%);
+
 }
