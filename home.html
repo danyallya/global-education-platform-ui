@@ -13,7 +13,7 @@
 
 <body>
 <div class="container-fluid">
-    <div class="container">
+    <div class="container s-100">
         <header class="d-flex align-items-center ">
             <div class="col-md-12 s-100">
                 <div class="row d-flex justify-content-around align-items-center relative">
@@ -74,14 +74,69 @@
                             <i class="demo-icon icon-align-left-1"></i>
                         </div>
                     </div>
-                    <div class="col-md-3 res-non">
-                        <div class="row d-flex justify-content-around">
+                    <div class="col-md-3 if-log in res-non">
+                        <div class="row d-flex not-login  justify-content-around">
                             <button class="header-btn">
                                 Become A Tutor
                             </button>
                             <button class="header-btn gold">
                                 Login/Signup
                             </button>
+                        </div>
+                        <div class="row has-login d-flex justify-content-around">
+                            <div class="notification pointer d-flex justify-content-center align-items-center relative have-noti">
+                                <i class="demo-icon icon-path-77"></i>
+                                <div class="num position-absolute d-flex justify-content-center align-items-center">
+                                    1
+                                </div>
+                            </div>
+                            <div class="menu-account pointer relative d-flex justify-content-center align-items-center">
+                                <div class="image">
+                                    <img src="assets/images/avatar.png" class="full">
+                                </div>
+                                <div class="text mr-2">
+                                    John Smith
+                                </div>
+                                <i class="demo-icon icon-down-open"></i>
+                                <div class="acc-items">
+                                    <ul>
+                                        <li class="d-flex align-items-center relative mb-2">
+                                            <i class="demo-icon icon-path-11 "></i>
+                                            <span class="ml-2">
+                                                Dashboard
+                                            </span>
+                                        </li>
+                                        <li class="d-flex align-items-center relative mb-2 have-noti">
+                                            <i class="demo-icon icon-path-39 "></i>
+                                            <span class="ml-2">
+                                                Message
+                                            </span>
+                                            <div class="num position-absolute d-flex justify-content-center align-items-center">
+                                                1
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center relative mb-2">
+                                            <i class="demo-icon icon-path-1 "></i>
+                                            <span class="ml-2">
+                                                Fav Tutors
+                                            </span>
+                                        </li>
+                                        <li class="d-flex align-items-center relative mb-2">
+                                            <i class="demo-icon icon-path-96 "></i>
+                                            <span class="ml-2">
+                                                FAQ
+                                            </span>
+                                        </li>
+                                        <li class="d-flex align-items-center relative mb-2">
+                                            <i class="demo-icon icon-path-98 "></i>
+                                            <span class="ml-2">
+                                                Log Out
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="cat-items-menu">
@@ -1310,9 +1365,92 @@ Top Tutors From All Of The World
         </footer>
     </div>
 
+    <div class="header-menu-ress">
+        <div class="s-100 d-flex justify-content-start flex-column">
+            <div class="item">
+                How It Works?
+            </div>
+            <div class="item">
+                Courses
+            </div>
+            <div class="item">
+                Find Tutors
+            </div>
+            <div class="item have-items">
+                categories
+                <i class="demo-icon  icon-angle-right">
+                </i>
+                <div class="items">
+                    <div>Time Managment
+                    </div>
+                    <div>Coaching
+                    </div>
+                    <div>Self Improve
+                    </div>
+                    <div>Timeline Tropy
+                    </div>
+                </div>
+            </div>
+            <div class="border item">
+            </div>
+            <div class="item">
+                Become A Tutor
+            </div>
+            <div class="item">
+                login / signup
+            </div>
+            <div class="border item">
 
+            </div>
+            <div class="user d-flex justify-content-start align-items-center">
+                <div class="image mb-2 mt-2">
+                    <img src="assets/images/avatar.png" class="full">
+                </div>
+                <div class="name mr-2">
+                    John Smith
+                </div>
+            </div>
+
+            <ul class="mb-2 mt-2">
+                <li class="d-flex align-items-center relative mb-2">
+                    <i class="demo-icon icon-path-11 "></i>
+                    <span class="ml-2">
+                                                Dashboard
+                                            </span>
+                </li>
+                <li class="d-flex align-items-center relative mb-2 have-noti">
+                    <i class="demo-icon icon-path-39 "></i>
+                    <span class="ml-2">
+                                                Message
+                                            </span>
+                    <div class="num position-absolute d-flex justify-content-center align-items-center">
+                        1
+                    </div>
+                </li>
+                <li class="d-flex align-items-center relative mb-2">
+                    <i class="demo-icon icon-path-1 "></i>
+                    <span class="ml-2">
+                                                Fav Tutors
+                                            </span>
+                </li>
+                <li class="d-flex align-items-center relative mb-2">
+                    <i class="demo-icon icon-path-96 "></i>
+                    <span class="ml-2">
+                                                FAQ
+                                            </span>
+                </li>
+                <li class="d-flex align-items-center relative mb-2">
+                    <i class="demo-icon icon-path-98 "></i>
+                    <span class="ml-2">
+                                                Log Out
+                                            </span>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
 </div>
-
 
 <script type="text/javascript"
         src="assets/js/jquery.min.js"></script>
@@ -1322,6 +1460,8 @@ Top Tutors From All Of The World
     $(document).on('click', function () {
         $('header .header-item').removeClass('active');
         $('header .cat-items-menu').removeClass("active");
+        $('header .menu-account').removeClass("active");
+        $('.header-menu-ress').removeClass("active");
 
     });
     $('header .header-item').on("click", function (e) {
@@ -1340,6 +1480,33 @@ Top Tutors From All Of The World
         e.stopPropagation()
 
     });
+    $('header .menu-account').on("click", function (e) {
+        $('header .header-item').removeClass('active');
+
+        $(this).addClass("active");
+        e.stopPropagation()
+
+    });
+    $('.header-menu-ress .item.have-items').on("click", function (e) {
+
+        if (!$(this).hasClass('active')) {
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+
+        }
+        e.stopPropagation()
+
+    });
+    $('header  .menu-icon').on("click", function (e) {
+
+        $('.header-menu-ress').addClass("active");
+        e.stopPropagation()
+
+    });
+
 </script>
 </body>
 </html>
+
+

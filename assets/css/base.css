@@ -153,6 +153,67 @@ header .logo-text {
     position: relative;
 }
 
+.header-menu-ress {
+    background-color: #ffffff85;
+    padding: 20px 10%;
+    font-size: 10px;
+    width: 90%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    z-index: 23;
+    backdrop-filter: blur(3px
+    );
+    border-radius: 26px;
+    box-shadow: inset 3px -1px 7px 0px white;
+    min-height: 25px;
+    left: 5%;
+}
+
+.header-menu-ress.active {
+    display: block;
+}
+
+.header-menu-ress .item {
+    font-size: 15px;
+    color: #000000cc;
+    transition: all 2s;
+
+    margin: 5px 0;
+}
+
+.header-menu-ress .item.have-items .items {
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.header-menu-ress .item.have-items {
+
+    overflow: hidden;
+    max-height: 24px;
+}
+
+.header-menu-ress .item.have-items.active {
+    max-height: 300px;
+
+}
+
+.header-menu-ress .item.have-items .items div {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.header-menu-ress .border {
+    border: 1px solid #70707078 !important;
+}
+
+.header-menu-ress .user .name {
+    font-size: 14px;
+    color: black;
+}
+
 header .header-item:before {
     content: '';
     position: absolute;
@@ -162,6 +223,73 @@ header .header-item:before {
     height: 2px;
     display: none;
     background-color: #F7CA46;
+}
+
+header .if-log .has-login {
+    display: none !important;
+}
+
+header .if-log.in .has-login {
+    display: flex !important;
+}
+
+header .if-log.in .not-login {
+    display: none !important;
+}
+
+header .if-log .notification {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #F59E1C;
+    color: white;
+}
+
+header .if-log .notification i {
+    transform: rotateZ(
+            22deg);
+    font-size: 20px;
+}
+
+header .menu-account .acc-items ul li.have-noti .num, .header-menu-ress ul li.have-noti .num {
+    display: flex !important;
+    background-color: #3F9EB7;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    font-size: 10px;
+    top: -2px;
+    left: 15px;
+    color: white;
+}
+
+header .menu-account .acc-items ul li .num, .header-menu-ress ul li .num {
+    display: none !important;
+
+}
+
+header .if-log .notification.have-noti .num {
+    display: flex !important;
+    background-color: #3F9EB7;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    font-size: 12px;
+    top: -2px;
+    right: -5px;
+}
+
+header .if-log .menu-account .image, .header-menu-ress .image {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 13px;
+    margin-right: 6px;
+}
+
+header .if-log .notification .num {
+    display: none !important;
+
 }
 
 header .header-item.active:before {
@@ -209,7 +337,7 @@ header button.blue {
     background-position-x: 91%;
 }
 
-header .ln-items {
+header .ln-items, header .menu-account .acc-items {
     position: absolute;
     width: 130%;
     display: none;
@@ -225,7 +353,24 @@ header .ln-items {
     box-shadow: inset 3px -1px 7px 0px white;
 }
 
-header .header-item.active .ln-items {
+header .menu-account .acc-items {
+    width: 100%;
+    top: 45px;
+    left: 0;
+    padding: 14px 26px;
+
+}
+
+header .menu-account .acc-items ul, .header-menu-ress ul {
+    list-style-type: none;
+    font-size: 12px;
+}
+
+header .menu-account .acc-items ul li i, .header-menu-ress ul li i {
+    font-size: 16px;
+}
+
+header .header-item.active .ln-items, header .menu-account.active .acc-items {
     display: block;
 }
 
