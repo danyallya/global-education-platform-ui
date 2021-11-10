@@ -186,6 +186,10 @@
         right: 0;
     }
 
+    header .header-item {
+        font-size: 13px;
+    }
+
     /*button {*/
     /*padding: 10px !important;*/
     /*height: auto !important;*/

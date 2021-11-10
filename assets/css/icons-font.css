@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'fontello';
-    src: url('../fonts/fontello.woff?86686227') format('woff')
+    font-family: 'icons-font';
+    src: url('../fonts/icons-font.woff?86686227') format('woff')
 ;
     font-weight: normal;
     font-style: normal;
@@ -11,13 +11,13 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?86686227#fontello') format('svg');
+    font-family: 'icons-font';
+    src: url('../font/icons-font.svg?86686227#icons-font') format('svg');
   }
 }
 */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "fontello";
+    font-family: "icons-font";
     font-style: normal;
     font-weight: normal;
     speak: never;
@@ -50,7 +50,6 @@
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
 
 .icon-path:before { content: '\e800'; } /* '' */
 .icon-path-1:before { content: '\e801'; } /* '' */
@@ -191,6 +190,8 @@
 .icon-left-dir:before { content: '\e888'; } /* '' */
 .icon-right-dir:before { content: '\e889'; } /* '' */
 .icon-ok:before { content: '\e88a'; } /* '' */
+.icon-cancel:before { content: '\e88b'; } /* '' */
+.icon-cancel-1:before { content: '\e88c'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-angle-up:before { content: '\f106'; } /* '' */

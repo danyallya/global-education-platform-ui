@@ -20,9 +20,9 @@
 }
 
 @font-face {
-    font-family: 'fontello';
+    font-family: 'icons-font';
 
-    src: url('../fonts/fontello.woff?43384272') format('woff');
+    src: url('../fonts/icons-font.woff?43384272') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -39,7 +39,7 @@ p {
 }
 
 .d-icon {
-    font-family: "fontello";
+    font-family: "icons-font";
     font-style: normal;
     font-weight: normal;
 
@@ -1224,6 +1224,29 @@ section.item-cards .item-card .main .num {
 
 }
 
+.res-menu-box .left-part [type=checkbox] {
+    -webkit-appearance: none !important;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    background-color: #d9d9d9 !important;
+    vertical-align: sub !important;
+    border-radius: 5px !important;
+    position: absolute !important;
+
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    left: 1rem !important;
+    content: "";
+    /* width: 100%; */
+    /* height: 100%; */
+    position: absolute;
+    /* left: 0; */
+    /* top: 0; */
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
 .login .check-item input {
     padding: 0 !important;
     margin: 0 auto;
@@ -1376,7 +1399,7 @@ section.item-cards .item-card .main .num {
 }
 
 .navbrand-page ul li:after {
-    font-family: 'fontello';
+    font-family: 'icons-font';
     content: '\e87f';
     position: absolute;
     right: -25px;
@@ -1519,43 +1542,56 @@ section.Recent-Comments .image-c {
 }
 
 /*question*/
-.box.question i {
+.box.question i , .res-menu-box .faq i {
     background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
 
 }
+.res-menu-box .faq i{
+    font-size: 20px;
+}
+.question-b-item {
+    overflow: hidden;
+    transition: all 0.9s;
+    max-height: 85px;
+}
+
+.question-b-item.active {
+    max-height: 1000px;
+}
 
 .question-b-item i.hide {
     display: none;
 }
 
-.question-b-item p.hide {
-    display: none;
-}
+/*.question-b-item p.hide {*/
+/*display: none;*/
+/*}*/
 
-.question-b-item p.hide, .question-b-item div.hide {
-    display: none;
-}
+/*.question-b-item p.hide, .question-b-item div.hide {*/
+/*display: none;*/
+/*}*/
 
-.box.active .question-b-item i.hide {
+/*.question-b-item.active i.hide {*/
+/*display: block !important;*/
+/*}*/
+
+.question-b-item.active p.hide, .question-b-item.active div.hide {
     display: block !important;
 }
 
-.box.active .question-b-item p.hide, .box.active .question-b-item div.hide {
-    display: block !important;
-}
-
-.box.active .question-b-item i {
-    display: none;
-}
+/*.question-b-item.active i {*/
+/*display: none;*/
+/*}*/
 
 .question-b-item i {
     background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 35px;
+    transition: all 0.9s;
 
 }
 
@@ -1592,10 +1628,12 @@ section.Recent-Comments .image-c {
 
 }
 
-.question-b-item i.hide {
+.question-b-item.active i {
     background: -webkit-linear-gradient(#F7CA46, #F59E1C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: rotateZ(
+            226deg);
 }
 
 .question-item i {
@@ -1707,6 +1745,7 @@ section.Recent-Comments .image-c {
 
 .sort .items {
     position: absolute;
+    display: none;
     top: 35px;
     background-color: #ffffff85;
     padding: 14px 25px;
@@ -1716,7 +1755,9 @@ section.Recent-Comments .image-c {
     border-radius: 26px;
     box-shadow: inset 3px -1px 7px 0px white;
 }
-
+.sort .items.active{
+    display: block;
+}
 .sort ul {
     margin: 0;
     list-style-type: none;
@@ -1734,7 +1775,7 @@ section.Recent-Comments .image-c {
     top: 0px;
     color: #F59E1C;
     font-size: 10px;
-    font-family: fontello;
+    font-family: icons-font;
 }
 
 .full-h {
@@ -1775,7 +1816,7 @@ section.Recent-Comments .image-c {
 .tutors-card:after {
     content: '\e801';
     right: 0;
-    font-family: fontello;
+    font-family: icons-font;
     position: absolute;
     top: 0;
     background-image: linear-gradient(to right, #F59E1C, #F7CA46);
@@ -2278,15 +2319,35 @@ button.blue-b-btn {
 
 /*res-menu-box*/
 .res-menu-box {
-    position: fixed;
+    position: absolute;
     left: -17px;
-    height: 100%;
-    overflow: scroll;
+    /*height: 100%;*/
+    /*overflow: scroll;*/
     z-index: 555555;
-    /*transform: translateX(-110%);*/
+    padding-left: 55px;
+    transform: translateX(-110%);
+    transition: all 1s;
+    /*padding-bottom: 66px;*/
 }
 
 .res-menu-box.active {
     transform: translateX(-1%);
 
 }
+
+.res-menu-box .header-te {
+    font-size: 20px;
+}
+
+.res-menu-box .title-in {
+    padding-left: 40px;
+    font-size: 14px !important;
+
+}
+
+.res-menu-box .close {
+    top: 11px;
+    right: 13px;
+    font-size: 20px;
+}
+
