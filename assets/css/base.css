@@ -315,7 +315,20 @@ header button.header-btn:hover {
     background-color: #57CFD9;
     color: white;
 }
+header button.header-btn.g-border {
+    border: 1px solid #F59E1C;
+    border-radius: 10px;
+    padding: 8px 9px;
+    outline: 0;
+    color: #F59E1C;
+    transition: all 0.5s;
+    background-color: #8b451300;
+}
 
+header button.header-btn.g-border:hover {
+    background-color: #F59E1C;
+    color: white;
+}
 header button.gold {
     background-image: linear-gradient(to right, #F7CA46, #F59E1C);
     color: white;
