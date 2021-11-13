@@ -315,6 +315,7 @@ header button.header-btn:hover {
     background-color: #57CFD9;
     color: white;
 }
+
 header button.header-btn.g-border {
     border: 1px solid #F59E1C;
     border-radius: 10px;
@@ -329,6 +330,7 @@ header button.header-btn.g-border:hover {
     background-color: #F59E1C;
     color: white;
 }
+
 header button.gold {
     background-image: linear-gradient(to right, #F7CA46, #F59E1C);
     color: white;
@@ -1216,7 +1218,7 @@ section.item-cards .item-card .main .num {
     list-style-type: none;
 }
 
-.left-part input, .login .check-item input {
+.left-part input, .login .check-item input, .check-box-type-one input {
     -webkit-appearance: none;
     width: 1.25rem;
     height: 1.25rem;
@@ -1269,13 +1271,13 @@ section.item-cards .item-card .main .num {
     margin: 0 auto;
 }
 
-.left-part input:checked, .login .check-item input:checked {
+.left-part input:checked, .login .check-item input:checked, .check-box-type-one input:checked {
     background-color: #D9D9D9;
     border-color: #D9D9D9;
     border-radius: 6px;
 }
 
-.left-part input:after, .login .check-item input:after {
+.left-part input:after, .login .check-item input:after, .check-box-type-one input:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -1288,7 +1290,12 @@ section.item-cards .item-card .main .num {
     background-position: center;
 }
 
-.left-part label, .login .check-item label {
+.left-part input:checked:after, .login .check-item input:checked:after, .check-box-type-one input:checked:after {
+    background-image: url(../images/check1.png);
+
+}
+
+.left-part label, .login .check-item label, .check-box-type-one label {
     padding-left: 50px;
     padding-top: 6px;
     cursor: pointer;
@@ -1301,6 +1308,18 @@ section.item-cards .item-card .main .num {
     cursor: pointer;
     color: #000000ad;
 
+}
+
+.check-box-type-one label {
+    padding-left: 31px !important;
+}
+
+.check-box-type-one {
+    position: relative;
+}
+
+.check-box-type-one input {
+    left: auto !important;
 }
 
 /*contact-us*/
@@ -1555,16 +1574,18 @@ section.Recent-Comments .image-c {
 }
 
 /*question*/
-.box.question i , .res-menu-box .faq i {
+.box.question i, .res-menu-box .faq i {
     background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
 
 }
-.res-menu-box .faq i{
+
+.res-menu-box .faq i {
     font-size: 20px;
 }
+
 .question-b-item {
     overflow: hidden;
     transition: all 0.9s;
@@ -1768,9 +1789,11 @@ section.Recent-Comments .image-c {
     border-radius: 26px;
     box-shadow: inset 3px -1px 7px 0px white;
 }
-.sort .items.active{
+
+.sort .items.active {
     display: block;
 }
+
 .sort ul {
     margin: 0;
     list-style-type: none;
@@ -2364,3 +2387,62 @@ button.blue-b-btn {
     font-size: 20px;
 }
 
+/*menu-select*/
+.menu-select {
+    background-color: #d9d9d9;
+    color: black;
+    min-width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 43px;
+    padding: 0 18px 0 20px;
+    font-size: 13px;
+}
+
+.menu-select .icon-down-open {
+    display: block;
+}
+
+.menu-select .icon-up-open {
+    display: none;
+}
+
+.menu-select.active .icon-up-open {
+    display: block;
+}
+
+.menu-select.active .icon-down-open {
+    display: none;
+}
+
+.menu-select .menu-select-option {
+    position: absolute !important;
+    left: 0;
+    top: 110%;
+    background-color: #ffffff85;
+    padding: 21px 17px;
+    font-size: 15px;
+    z-index: 23;
+    backdrop-filter: blur(10px
+    );
+    display: none !important;
+    border-radius: 26px;
+    box-shadow: inset 3px -1px 7px 0px white;
+}
+
+.menu-select.active .menu-select-option {
+    display: flex !important;
+}
+
+.menu-select .menu-select-option input.search {
+    outline: 0;
+    border: 0;
+    background-color: #5f9ea000;
+    padding: 4px 0px;
+    border-bottom: 2px solid #0000002b;
+    margin: 0 0 10px 0;
+}
+
+.menu-select .menu-select-option .head-text {
+    font-size: 17px;
+}
