@@ -1477,19 +1477,26 @@ section.normal .image {
 
 .video-view .video-content {
     position: absolute;
-    right: 52%;
+    right: 50%;
     width: 0;
-    top: 190px;
+    top: 50%;
+    height: 0;
+}
+
+.video-view-sh {
+    box-shadow: 1px 6px 10px -3px #239ea966;
 }
 
 .video-view .video-content button {
     background-image: url(../images/player.png);
-    width: 78px;
-    height: 78px;
+    width: 80px;
+    height: 80px;
     background-color: #ee82ee00;
     border: 0;
     outline: none;
+    margin-top: -40px;
     background-repeat: no-repeat;
+    margin-left: -40px;
 }
 
 section.details .date {
@@ -1711,7 +1718,10 @@ section.Recent-Comments .image-c {
     margin: 0;
     width: 60px;
     height: 60px;
+    padding: 0;
     background-size: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 .black {
@@ -1738,8 +1748,8 @@ section.Recent-Comments .image-c {
 }
 
 .course-left-part .video-view .video-content, .tutors-timezone .video-view .video-content {
-    right: 163px;
-    top: 69px;
+    right: 50%;
+    top: 50%;
 }
 
 .course-left-part .progress {
