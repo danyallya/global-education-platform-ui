@@ -3,6 +3,10 @@
         display: none !important;
     }
 
+    button.cu-pad {
+        padding: 8pt 16pt;
+    }
+
     .sub-email-box {
         margin-bottom: -20px;
     }

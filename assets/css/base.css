@@ -135,12 +135,13 @@ header .logo img {
 }
 
 header .header-item, header .header-item i {
-    color: #4B4B4B
+    color: #4B4B4B;
+
 }
 
 header .logo-text {
     font-size: 17px;
-    color: #3F9EB7;
+    color: #57CFD9;
 
     margin-left: 14px;
 }
@@ -162,7 +163,7 @@ header .logo-text {
     position: absolute;
     top: 60px;
     z-index: 23;
-    backdrop-filter: blur(3px
+    backdrop-filter: blur(7px
     );
     border-radius: 26px;
     box-shadow: inset 3px -1px 7px 0px white;
@@ -241,7 +242,7 @@ header .if-log .notification {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background-color: #F59E1C;
+    background-color: #57CFD9;
     color: white;
 }
 
@@ -253,7 +254,8 @@ header .if-log .notification i {
 
 header .menu-account .acc-items ul li.have-noti .num, .header-menu-ress ul li.have-noti .num {
     display: flex !important;
-    background-color: #3F9EB7;
+    background-image: linear-gradient(to right, #F7CA46, #F59E1C);
+
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -270,7 +272,7 @@ header .menu-account .acc-items ul li .num, .header-menu-ress ul li .num {
 
 header .if-log .notification.have-noti .num {
     display: flex !important;
-    background-color: #3F9EB7;
+    background-image: linear-gradient(to right, #F7CA46, #F59E1C);
     width: 17px;
     height: 17px;
     border-radius: 50%;
@@ -296,12 +298,24 @@ header .header-item.active:before {
     display: block;
 }
 
-/*header .header-item:hover {*/
-/*transition: all 0.3s;*/
-/*color: #F59E1C;*/
-/*}*/
+button.blue:hover {
+    background-color: #57CFD9;
+    color: white;
+}
 
-header button.header-btn {
+button.gold {
+    background-image: linear-gradient(to right, #F7CA46, #F59E1C);
+    color: white !important;
+    border: none !important;
+    border-radius: 10px;
+    padding: 8px 9px;
+    outline: 0;
+    transition: all 0.5s;
+    background-color: #8b451300;
+}
+
+button.blue {
+
     border: 1px solid #57CFD9;
     border-radius: 10px;
     padding: 8px 9px;
@@ -311,43 +325,16 @@ header button.header-btn {
     background-color: #8b451300;
 }
 
-header button.header-btn:hover {
-    background-color: #57CFD9;
-    color: white;
+button.cu-pad {
+    padding: 8pt 30pt;
 }
 
-header button.header-btn.g-border {
-    border: 1px solid #F59E1C;
-    border-radius: 10px;
-    padding: 8px 9px;
-    outline: 0;
-    color: #F59E1C;
-    transition: all 0.5s;
-    background-color: #8b451300;
+button.cu-sm-pad {
+    padding: 6pt 30pt;
+    border-width: 2px;
+    font-size: 12px;
 }
 
-header button.header-btn.g-border:hover {
-    background-color: #F59E1C;
-    color: white;
-}
-
-header button.gold {
-    background-image: linear-gradient(to right, #F7CA46, #F59E1C);
-    color: white;
-    border: none;
-}
-
-header button.blue {
-    background-color: #3F9EB7;
-    border: none;
-
-    color: white;
-}
-
-/*header .header-item:hover i {*/
-/*transition: all 0.3s;*/
-/*color: #F59E1C;*/
-/*}*/
 .contact-us-items form select, .box form select, .filter-tu select, header select {
     background-position-x: 91%;
 }
@@ -505,7 +492,7 @@ button {
     color: #B80000;
 }
 
-footer button.footer-btn, .box button, .contact-us-items form button, section.comment button, .cub-btn {
+footer button.footer-btn, .contact-us-items form button, section.comment button, .cub-btn {
     /*margin-inline-start: 40px;*/
     color: white;
     height: 40px;
@@ -514,7 +501,7 @@ footer button.footer-btn, .box button, .contact-us-items form button, section.co
     border-radius: 12px;
     font-size: 11px;
     letter-spacing: 1px;
-    background-color: #3F9EB7;
+    background-color: #46C1CB;
     outline: 0;
     border: 1px solid rgba(87, 207, 217, 0.31);
 }
@@ -638,11 +625,12 @@ footer .b-part i {
 }
 
 .home .search-box input {
-    height: 40px;
+    height: 52px;
 }
 
 .home .search-box button {
-    font-size: 13px;
+    font-size: 15px;
+    height: 50px;
 }
 
 .home .sec-one {
@@ -662,7 +650,7 @@ footer .b-part i {
 }
 
 .home .Membership .box-sh i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 35px;
@@ -681,7 +669,7 @@ px
 
 .home .Membership .box-sh.like {
     position: absolute;
-    left: 396px;
+    right: 195px;
     top: 145px;
     padding: 15px 10px;
 }
@@ -696,7 +684,7 @@ px
 
 .home .Membership .box-sh.spicial-system {
     position: absolute;
-    left: 365px;
+    right: 110px;
     top: 222px;
     padding: 15px 10px;
     width: fit-content;
@@ -735,7 +723,9 @@ px
 }
 
 .home .t-cat-i .item:hover i {
-    color: #3F9EB7;
+    background: -webkit-linear-gradient(#F7CA46, #F59E1C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -768,7 +758,7 @@ button.cu-btn {
 }
 
 button.cu-btn i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 35px;
@@ -776,6 +766,16 @@ button.cu-btn i {
 
 .c-orange {
     color: #F59E1C !important;
+    transition: all 0.5s;
+}
+
+.c-orange.h-blue:hover {
+    color: #57CFD9 !important;
+
+}
+
+.c-blue {
+    color: #57CFD9 !important;
 }
 
 .sec-one .left-side .head-text {
@@ -814,13 +814,18 @@ section.Membership ul:first-child {
     padding: 0;
 }
 
-section.Membership ul li i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
-    margin: 0 auto;
+section.Membership ul li .icon-bac {
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     border-radius: 50%;
     color: white;
-    font-size: 17px;
-    padding: 5px;
+    text-align: center;
+    display: table;
+    -webkit-writing-mode: vertical-rl;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-left: 5px;
     border: 0;
 }
 
@@ -839,7 +844,7 @@ section.Membership-plans .membership-card .m-icon i {
 }
 
 section.Membership-plans .membership-card .title {
-    color: #3F9EB7;
+    color: #57CFD9;
     font-size: 25px;
 }
 
@@ -849,7 +854,7 @@ section.Membership-plans .membership-card .price {
 }
 
 section.Membership-plans .membership-card ul li i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     margin: 0 auto;
     border-radius: 50%;
     color: white;
@@ -870,10 +875,10 @@ section.Membership-plans .membership-card ul {
 }
 
 section.Membership-plans .membership-card button.buy-btn {
-    border: 2px solid #F59E1C;
+    border: 2px solid #57CFD9;
     border-radius: 6px;
     background-color: white;
-    color: #F59E1C;
+    color: #57CFD9;
     padding: 7px;
     font-size: 12px;
     width: 60%;
@@ -932,9 +937,9 @@ section.blog .over-text {
 /*about-us*/
 .sec-one.about .over-text {
     position: absolute;
-    font-size: 100pt;
+    font-size: 141pt;
     color: #00000005;
-    left: 104px;
+    left: -23px;
     top: 0;
     z-index: -1;
 }
@@ -947,7 +952,7 @@ section.blog .over-text {
 }
 
 .header-text {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .box .image {
@@ -962,11 +967,11 @@ section.blog .over-text {
 }
 
 .box .date, section.Recent-Comments .date {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .box .rate i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 22px;
@@ -1036,6 +1041,7 @@ section.our-service .our-service-card {
     padding: 35px;
     overflow: hidden;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
@@ -1052,10 +1058,9 @@ section.our-service .our-service-card {
 }
 
 section.our-service .our-service-card .icon {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #5CD0D6);
     height: 90px;
     width: 90px;
-    background-color: saddlebrown;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -1063,6 +1068,10 @@ section.our-service .our-service-card .icon {
     border-radius: 50%;
     color: white;
     font-size: 35px;
+}
+
+section.our-service .our-service-card:hover .icon {
+    background: -webkit-linear-gradient(#F7CA46, #F59E1C);
 }
 
 section.our-service .our-service-card .logo-card i {
@@ -1385,7 +1394,7 @@ section.item-cards .item-card .main .num {
 }
 
 .contact-us-items .icon-item {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     width: 110px;
     margin: 0 auto;
 
@@ -1534,6 +1543,13 @@ section.details i.fill, section.Recent-Comments i.fill {
 
 section.details .social-i i {
     font-size: 25px;
+
+}
+
+section.details .social-i i:hover {
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section.Recent-Comments .image-c {
@@ -1541,6 +1557,10 @@ section.Recent-Comments .image-c {
     margin-right: 30px;
     border-radius: 9px;
     overflow: hidden;
+}
+
+.d-none {
+    display: none !important;
 }
 
 /*login*/
@@ -1570,12 +1590,13 @@ section.Recent-Comments .image-c {
 
 .login .box button.google-btn, .login .box button.facebook-btn {
     background-color: #8b451300;
-    border: 1px solid #707070;
+    border: 2px solid #707070;
     color: #707070;
     padding: 0;
     width: 100%;
+    border-radius: 15px;
 }
-
+a{color: #57CFD9!important;}
 .login .box button.google-btn i, .login .box button.facebook-btn i {
     font-size: 25px;
 }
@@ -2255,9 +2276,9 @@ button.blue-b-btn {
 }
 
 .page-item.active .page-link {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9) !important;
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9) !important;
 
-    border: 1px solid #3F9EB7 !important;
+    border: 1px solid rgba(63, 158, 183, 0) !important;
     color: #F1F1F1 !important;
 }
 
@@ -2329,6 +2350,12 @@ button.blue-b-btn {
     color: #3f9fb8;
 }
 
+.home .avatar-box .avatar-i i {
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /*sub-email-box*/
 .sub-email-box {
     margin-bottom: -50px;
@@ -2336,7 +2363,7 @@ button.blue-b-btn {
 
 /*over-text costum*/
 .over-text.ab-a {
-    top: -70px !important;
+    top: -120px !important;
 }
 
 /*res0mneu*/
