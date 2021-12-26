@@ -11,6 +11,7 @@
 
 <body>
 <div class="container-fluid">
+    <!--header-->
     <div class="row justify-content-center">
         <div class="col-md-10 s-100">
             <header class="d-flex align-items-center ">
@@ -69,16 +70,17 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-none res-non menu-icon">
-                                <i class=" icon-align-left-1"></i>
+                            <div class="d-none res-block menu-icon">
+                                <i class="icon-path-1414 reverse"></i>
                             </div>
                         </div>
-                        <div class="col-md-3 if-log  res-non">
-                            <div class="row d-flex not-login  justify-content-around">
-                                <button class="header-btn g-border">
+                        <!--if log in add class in-->
+                        <div class="col-md-3 if-log res-non">
+                            <div class="row d-flex not-login in justify-content-around">
+                                <button class="header-btn blue">
                                     Become A Tutor
                                 </button>
-                                <button class="header-btn blue">
+                                <button class="header-btn gold">
                                     Login/Signup
                                 </button>
                             </div>
@@ -237,7 +239,7 @@
 
         </div>
     </div>
-
+    <!--end header-->
 
 
     <div class="row  d-flex justify-content-center pr-3 pl-3">
@@ -247,7 +249,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-8 col-sm-12">
                         <div class="left-side relative d-flex flex-column mt-5 pt-5 ">
-                            <div class="header-text text-center c-orange">
+                            <div class="header-text text-center c-blue">
                                 Frequently Asked Question
                             </div>
                             <h5 class="text-center mb-5">
@@ -591,7 +593,7 @@
                         <h6>
                             About What We Provide
                         </h6>
-                        <p class="small-res">
+                        <p class="small-res text-left">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu orci. Praesent
                             dignissim mollis arcu. Vivamus vitae diam sit amet neque semper ullamcorper at a velit.
                             Curabitur pulvinar sem at est vulputate, eget tincidunt dolor aliquam. Nullam sagittis
@@ -604,7 +606,7 @@
                         <div class="row d-flex justify-content-start ">
                             <div class="col-md-8 s-100">
                                 <div class="row">
-                                    <div class="col-md-6 s-50">
+                                    <div class="col-md-5 offset-md-1 s-50">
                                         <ul class="list-items">
                                             <li>
                                                 <h6>Get To Know Us</h6>
@@ -651,7 +653,7 @@
                                         </li>
 
                                     </ul>
-                                    <ul class="list-items col-md-12 s-50">
+                                    <ul class=" col-md-12 s-50">
                                         <li>
                                             <h6>
                                                 Support
@@ -675,6 +677,7 @@
                     </div>
                     <div class="line mb-4 mt-3"></div>
                 </div>
+
                 <div class="row d-flex justify-content-start">
                     <div class="col-md-8 s-100">
                         <div class="row d-flex justify-content-start">
@@ -955,6 +958,17 @@
         e.stopPropagation()
 
     });
+    $('.question-b-item').on("click", function (e) {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+
+        }
+        e.stopPropagation()
+
+    });
+
 </script>
 
 

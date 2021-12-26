@@ -335,6 +335,12 @@ button.cu-sm-pad {
     font-size: 12px;
 }
 
+button.cu-tutor-pad {
+    padding: 6pt 0 !important;
+    border-width: 2px;
+    font-size: 11px;
+}
+
 .contact-us-items form select, .box form select, .filter-tu select, header select {
     background-position-x: 91%;
 }
@@ -422,8 +428,7 @@ header .cat-items-menu .item:hover {
 }
 
 header .menu-icon {
-    transform: rotateY(
-            180deg);
+
     color: #4B4B4B;
     font-size: 20px;
 }
@@ -550,12 +555,18 @@ footer button.footer-btn.def:hover {
 footer button.footer-btn.def {
     background-color: #858585;
     border: 1px solid rgba(0, 0, 0, 0.06);
-
     height: 65px;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 0 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
+footer button.footer-btn.def i{
+    font-size: 32px;
+}
 footer .email input {
     background-color: #f5deb300;
     border-radius: 10px;
@@ -1424,6 +1435,10 @@ section.item-cards .item-card .main .num {
     cursor: pointer;
 }
 
+.contact-us-items .social-i i:hover {
+    color: #4760A6;
+}
+
 /**/
 
 /*single-page*/
@@ -1596,14 +1611,18 @@ section.Recent-Comments .image-c {
     width: 100%;
     border-radius: 15px;
 }
-a{color: #57CFD9!important;}
+
+a {
+    color: #57CFD9 !important;
+}
+
 .login .box button.google-btn i, .login .box button.facebook-btn i {
     font-size: 25px;
 }
 
 /*question*/
 .box.question i, .res-menu-box .faq i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
@@ -1618,6 +1637,10 @@ a{color: #57CFD9!important;}
     overflow: hidden;
     transition: all 0.9s;
     max-height: 85px;
+}
+
+.box .question-b-item {
+    max-height: 50px;
 }
 
 .question-b-item.active {
@@ -1649,7 +1672,7 @@ a{color: #57CFD9!important;}
 /*}*/
 
 .question-b-item i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 35px;
@@ -1685,7 +1708,7 @@ a{color: #57CFD9!important;}
 
 .question-item li:hover .text {
     font-weight: bold;
-    color: black;
+    color: #000000b8;
     font-size: 17px;
 
 }
@@ -1699,7 +1722,7 @@ a{color: #57CFD9!important;}
 }
 
 .question-item i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 25px;
@@ -1723,7 +1746,7 @@ a{color: #57CFD9!important;}
     border-radius: 6px;
     top: 6px;
     width: 16px;
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     height: 7px;
 }
 
@@ -1802,9 +1825,9 @@ a{color: #57CFD9!important;}
 }
 
 .sort .logo-icon {
-    font-size: 30px;
-    transform: rotate(
-            180deg) scaleX(-1);
+    font-size: 17px;
+    transform: rotateY(
+            180deg);
     color: #707070;
 }
 
@@ -1894,7 +1917,7 @@ a{color: #57CFD9!important;}
 }
 
 .tutors-card.liked:after {
-    background-image: linear-gradient(to right, #57CFD9, #3F9EB7);
+    background-image: linear-gradient(to right, #57CFD9, #DEE38E);
 }
 
 .tutors-card .image:before {
@@ -1905,7 +1928,7 @@ a{color: #57CFD9!important;}
     left: 15px;
     top: 15px;
     border-radius: 50%;
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
 
 }
 
@@ -1919,7 +1942,7 @@ img.flag {
 }
 
 .tutors-card .information i, .courses-card .information i, .card-team i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 23px;
@@ -1943,7 +1966,7 @@ img.flag {
 }
 
 .tutors-timezone i {
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 23px;
@@ -2032,7 +2055,7 @@ img.flag {
 
 .tutors-timezone .circle-e.active, .tutors-timezone .circle-c.active {
 
-    background: -webkit-linear-gradient(#3F9EB7, #57CFD9);
+    background: -webkit-linear-gradient(#DEE38E, #57CFD9);
 }
 
 .gainsboro-color {
