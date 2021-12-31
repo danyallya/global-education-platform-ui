@@ -552,6 +552,14 @@ footer button.footer-btn.def:hover {
     border-bottom: 2px solid #333333;
 }
 
+footer .b-part {
+    padding-bottom: 15px;
+}
+
+footer .b-part ul {
+    margin: 0;
+}
+
 footer button.footer-btn.def {
     background-color: #858585;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -564,9 +572,11 @@ footer button.footer-btn.def {
     justify-content: center;
     text-align: center;
 }
-footer button.footer-btn.def i{
+
+footer button.footer-btn.def i {
     font-size: 32px;
 }
+
 footer .email input {
     background-color: #f5deb300;
     border-radius: 10px;
