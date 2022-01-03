@@ -1,4 +1,8 @@
 @media screen and (max-width: 767.98px) {
+    .have-left-shadow-orange:after, .have-right-shadow-orange:before, .have-left-shadow-green:after, .have-right-shadow-green:before{
+        display: none;
+    }
+
     header {
         display: none !important;
     }
@@ -177,7 +181,8 @@
     }
 
     .map-bac-over {
-        background-size: 100%;
+        width: 100%;
+        left: 0;
     }
 
     .home .Membership .box-sh.spicial-system {
