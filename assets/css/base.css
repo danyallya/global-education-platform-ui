@@ -99,7 +99,7 @@ body {
 .have-right-shadow-green:before {
     content: '';
     position: absolute;
-    right: -20%;
+    right: -25%;
     bottom: 26%;
     background-image: url(../images/bg-r.png);
     width: 500px;
@@ -112,7 +112,7 @@ body {
 .have-right-shadow-orange:before {
     content: '';
     position: absolute;
-    right: -20%;
+    right: -25%;
     bottom: 26%;
     background-image: url(../images/bg-l.png);
 
@@ -126,7 +126,7 @@ body {
 .have-left-shadow-orange:after {
     content: '';
     position: absolute;
-    left: -20%;
+    left: -25%;
 
     bottom: -30%;
     background-image: url(../images/bg-l.png);
@@ -140,9 +140,9 @@ body {
 .have-left-shadow-green:after {
     content: '';
     position: absolute;
-    left: -20%;
+    left: -25%;
 
-    bottom: -70%;
+    bottom: -30%;
     background-image: url(../images/bg-r.png);
     width: 500px;
     background-size: 100%;
@@ -151,85 +151,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.have-right-shadow-orange.rcu-one:before {
-    right: -45%;
-    bottom: 10%;
-}
-
-.have-left-shadow-orange.rcu-one:after {
-    bottom: 30%;
-}
-
-.have-right-shadow-green.rcu-one:before {
-    right: -10%;
-    bottom: 0;
-}
-
-.have-right-shadow-green.rcu-two:before {
-    right: -50%;
-    bottom: 0;
-}
-
-.have-left-shadow-orange.rcu-two:after {
-    left: -50%;
-    bottom: -50%;
-}
-
-.have-left-shadow-orange.rcu-three:after {
-    left: -35%;
-    top: -5%;
-}
-
-.have-right-shadow-green.rcu-four:before {
-    bottom: auto;
-    top: 16%;
-}
-
-.have-left-shadow-orange.rcu-four:after {
-    bottom: 0;
-}
-
-.have-right-shadow-green.rcu-five:before {
-    right: -30%;
-    bottom: -75%;
-}
-
-.have-left-shadow-orange.rcu-five:after {
-    left: -55%;
-    bottom: auto;
-    top: 15%;
-}
-
-.have-right-shadow-orange.rcu-six:before {
-    right: -30%;
-    bottom: auto;
-    top: -10%;
-}
-
-.have-left-shadow-orange.rcu-six:after {
-    left: -40%;
-    bottom: 0;
-}
-
-.have-left-shadow-orange.rcu-seven:after {
-    left: -30%;
-    bottom: -50%;
-}
-
-.have-right-shadow-green.rcu-seven:before {
-    bottom: 0;
-}
 .courses-card .image{
     margin: 10px auto;
-}
-.have-right-shadow-green.rcu-eight:before {
-
-    bottom: -60%;
-
-}
-
-.have-left-shadow-orange.rcu-eight:after {
-    bottom: -85%;
 }
 
 .login .have-left-shadow-orange:after {
@@ -237,16 +160,7 @@ body {
     bottom: 0%;
 }
 
-.have-right-shadow-green.rcu-nine:before {
-    bottom: auto;
-    top: -25%;
-}
-.have-left-shadow-orange.rcu-nine:after{
-    left: -35%;
-    bottom: auto;
 
-    top: 0%;
-}
 .full {
     width: 100%;
 }
