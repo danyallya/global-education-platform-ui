@@ -719,7 +719,7 @@ footer .b-part i {
     background-color: #ffffff99;
     backdrop-filter: blur(4px);
     transition: all 0.5s;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: inset -3px -1px 7px 0px white;
 }
 
@@ -752,7 +752,7 @@ px
     background-color: #ffffff;
     backdrop-filter: blur(4px);
 
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: inset -3px -1px 7px 0px white;
 }
 
@@ -905,7 +905,7 @@ section.Membership ul li .icon-bac {
 
 section.Membership-plans .membership-card {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px;
     width: 100%;
 }
@@ -991,7 +991,7 @@ section.blog .over-text {
 .left-part .item .image {
     width: 28%;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-right: 15px;
 }
 
@@ -1020,7 +1020,7 @@ section.blog .over-text {
 
 .sec-one.about .left-side .image {
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 20px;
     /*height: 300px;*/
     box-shadow: 0 0 20px -6px #57cfd954;
 }
@@ -1059,13 +1059,13 @@ section.blog .over-text {
     background-color: white;
     overflow: hidden;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .our-team .card-team .image {
     width: 100%;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .our-team .card-team .image img {
@@ -1077,7 +1077,7 @@ section.our-customers-say .feedback-card {
     background-color: rgba(255, 255, 255, 0.81);
     padding: 15px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
 
 }
 
@@ -1114,7 +1114,7 @@ section.our-service .our-service-card {
     background-color: rgba(255, 255, 255, 0.81);
     padding: 35px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
 
 }
@@ -1256,7 +1256,7 @@ section.item-cards .item-card .main {
     height: 100%;
     z-index: 2;
     position: relative;
-    border-radius: 23px;
+    border-radius: 20px;
     right: 0;
     bottom: 0px;
 }
@@ -2442,7 +2442,7 @@ button.blue-b-btn {
     padding: 25px 15px;
     background-color: #ffffff6e;
     backdrop-filter: blur(1px);
-    border-radius: 26px;
+    border-radius: 20px;
     margin-bottom: 120px;
     box-shadow: inset 3px -1px 7px 0px white;
 }
