@@ -1,14 +1,149 @@
+@media screen and (max-width: 1100px) {
+
+    header.dash-cu .if-log .notification, header.dash-cu .if-log .conversation {
+        border-radius: 6px;
+        width: 24px;
+        height: 24px;
+    }
+
+    header.dash-cu .if-log .notification i, header.dash-cu .if-log .conversation i {
+        font-size: 12px;
+    }
+
+    header.dash-cu .if-log .notification.have-noti .num, header.dash-cu .if-log .conversation.have-noti .num {
+        width: 8px;
+        height: 8px;
+        font-size: 4px;
+    }
+
+    header.dash-cu .if-log .menu-account .image {
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+    }
+
+    header.dash-cu .if-log .menu-account .text {
+        font-size: 11px;
+    }
+
+    header.dash-cu .menu-account .acc-items {
+        width: 130%;
+        left: -20px;
+    }
+
+    .f-d-col-cu {
+        flex-direction: column;
+    }
+
+    .f-d-col-cu button {
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 767.98px) {
-    .have-left-shadow-orange:after, .have-right-shadow-orange:before, .have-left-shadow-green:after, .have-right-shadow-green:before{
+    .have-left-shadow-orange:after, .have-right-shadow-orange:before, .have-left-shadow-green:after, .have-right-shadow-green:before {
         display: none;
     }
 
-    header {
-        display: none !important;
+    .massage-box {
+        right: 0px;
+        padding-right: 30px;
+    }
+    .f-d-col-cu {
+        flex-direction: row;
+    }
+
+    .f-d-col-cu button {
+        margin-bottom: 0;
+    }
+    .f-c-reverse {
+        -ms-flex-direction: column-reverse !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .dash-box.requests .image {
+        height: 60px;
+    }
+
+    .dash-box.requests table.res-block td:last-child, .dash-box.requests table.res-block th:last-child {
+        padding-left: 25px !important;
+    }
+
+    table .absolute-td-item {
+        position: absolute;
+        right: 40px;
+    }
+
+    .table-cu-one tbody tr {
+        position: relative;
+    }
+
+    .flex-dir-col-res {
+        flex-direction: column;
+    }
+
+    .table-cu-one tbody tr td:last-child {
+        justify-content: end !important;
+        padding-right: 20px !important;
+    }
+
+    .dash-box.requests .border {
+        margin-left: 5rem;
+    }
+
+    .dash-box.payment-history .border {
+        margin-left: 0;
+    }
+
+    .dash-box.requests .if-open {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    /*header {*/
+        /*display: none !important;*/
+    /*}*/
+
+    .cu-res-view {
+        display: inline-flex !important;
+        overflow-y: auto;
+        width: 110%;
+        margin-left: -5%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .cu-res-view .dash-box.autor-activities {
+        margin: 0 15px;
+        padding: 25px 100px;
+        cursor: pointer;
+        float: left;
+        width: 165px;
+        height: 110px;
+        display: inline-flex;
+        align-content: center;
+    }
+
+    .cu-res-view .dash-box.autor-activities .small {
+        width: 100%;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+    }
+
+    .cu-res-view .dash-box.autor-activities .title-md {
+        width: 100%;
+        position: absolute;
+        left: 20px;
+        top: 45px;
     }
 
     button.cu-pad {
         padding: 8pt 16pt;
+    }
+
+    .dash-box.payment button.cu-pad {
+        padding: 3pt 16pt;
     }
 
     .sub-email-box {
