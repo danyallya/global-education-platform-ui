@@ -41,6 +41,7 @@
 }
 
 @media screen and (max-width: 767.98px) {
+
     .have-left-shadow-orange:after, .have-right-shadow-orange:before, .have-left-shadow-green:after, .have-right-shadow-green:before {
         display: none;
     }
@@ -49,6 +50,7 @@
         right: 0px;
         padding-right: 30px;
     }
+
     .f-d-col-cu {
         flex-direction: row;
     }
@@ -56,6 +58,7 @@
     .f-d-col-cu button {
         margin-bottom: 0;
     }
+
     .f-c-reverse {
         -ms-flex-direction: column-reverse !important;
         flex-direction: column-reverse !important;
@@ -101,9 +104,8 @@
     }
 
     /*header {*/
-        /*display: none !important;*/
+    /*display: none !important;*/
     /*}*/
-
     .cu-res-view {
         display: inline-flex !important;
         overflow-y: auto;
@@ -274,14 +276,35 @@
         text-align: center !important;
     }
 
+    .ml-res-0 {
+        margin-left: 0 !important;
+    }
+
     .j-c-sm-end {
         -ms-flex-pack: end !important;
         justify-content: end !important;
     }
 
+    .res-flex {
+        display: flex !important;
+    }
+
+    .align-i-e {
+        align-items: flex-end !important;
+    }
+
     .j-c-sm-center {
         -ms-flex-pack: center !important;
         justify-content: center !important;
+    }
+
+    .mt-ne50 {
+        margin-top: -50px;
+    }
+
+    .j-c-sm-between {
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
     }
 
     .f-c-res {
@@ -460,6 +483,41 @@
         font-size: 45px;
         color: #0000000d;
         margin-right: -25px;
+    }
+
+    .profile-box .header-part .head-item:first-child {
+        margin-left: 40px;
+    }
+
+    .profile-box .header-part .head-item:last-child {
+        margin-right: 40px;
+    }
+
+    .profile-box .progress {
+        width: 1200px !important;
+    }
+
+    .profile-box .header-part .head-item {
+        white-space: nowrap;
+    }
+
+    .profile-box .progress.gold .progress-bar {
+        width: 130px !important;
+    }
+
+    .profile-box .progress.gold .progress-bar:last-child {
+        width: 0 !important;
+    }
+
+    .has-cu-pd-ma {
+        padding-bottom: 46px !important;
+        margin-bottom: 0 !important;
+    }
+
+    #Availability a {
+        position: absolute;
+        right: 15px;
+        bottom: -10px;
     }
 }
 
