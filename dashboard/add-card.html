@@ -1,13 +1,13 @@
 <html lang="en">
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>checkout</title>
+    <title>add card</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/base.css"/>
-    <link rel="stylesheet" href="assets/css/icons-font.css"/>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/base.css"/>
+    <link rel="stylesheet" href="../assets/css/icons-font.css"/>
 
-    <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <link rel="stylesheet" href="../assets/css/responsive.css"/>
 
 
 </head>
@@ -29,7 +29,7 @@
 
                 <div class="col-md-3 s-50 d-flex align-items-center res-non">
                     <div class="logo">
-                        <img src="assets/images/logo.png">
+                        <img src="../assets/images/logo.png">
 
                     </div>
                     <div class="logo-text">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="menu-account pointer relative d-flex justify-content-center align-items-center">
                             <div class="image">
-                                <img src="assets/images/avatar.png" class="full">
+                                <img src="../assets/images/avatar.png" class="full">
                             </div>
                             <div class="text mr-2 res-non">
                                 John Smith
@@ -154,7 +154,7 @@
         <div class="box res-dashboard-menu-box d-none res-block ">
             <div class="mb-4 d-flex align-items-center">
                 <div class="logo">
-                    <img src="assets/images/logo.png">
+                    <img src="../assets/images/logo.png">
 
                 </div>
                 <div class="logo-text">
@@ -338,244 +338,181 @@ Setting
                     <div class="border mb-2"></div>
                     <div class="row">
                         <div class="col-md-12 mt-2 add-card">
-                            <div class="dash-box d-flex justify-content-start align-items-start p-4 mb-2">
-                                <div class="col-md-5 col-sm-12 d-flex flex-column justify-content-start border-right">
-                                    <div class="text mb-3">
-                                        Summery
+                            <div class="dash-box p-4 mb-2">
+                                <form>
+                                    <div class="d-flex justify-content-start flex-column  mb-2">
+                                        <div class="item d-flex justify-content-between flex-wrap align-items-center"  role="button"
+                                             data-toggle="modal" data-target="#myModal">
+                                            <div class="radio d-flex justify-content-start align-items-center">
+                                                <input id="radio-1" name="radio" type="radio" checked="">
+                                                <label for="radio-1"
+                                                       class="radio-label d-flex justify-content-start align-items-center">Add
+                                                    Bank Card</label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <img src="../assets/images/visa.png" class="mr-1">
+                                                <img src="../assets/images/amex.png" class="mr-1">
+                                                <img src="../assets/images/mastercard.png" class="mr-1">
+                                                <img src="../assets/images/Discover.png" class="mr-1">
+                                            </div>
+
+                                        </div>
+                                        <div class="item d-flex justify-content-between align-items-center">
+                                            <div class="radio d-flex justify-content-start align-items-center">
+                                                <input id="radio-2" name="radio" type="radio" checked="">
+                                                <label for="radio-2"
+                                                       class="radio-label d-flex justify-content-start align-items-center">Add
+                                                    Bank </label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <img src="../assets/images/bank.png" class="mr-1">
+                                            </div>
+
+                                        </div>
+                                        <div class="item d-flex justify-content-between align-items-center">
+                                            <div class="radio d-flex justify-content-start align-items-center">
+                                                <input id="radio-3" name="radio" type="radio" checked="">
+                                                <label for="radio-3"
+                                                       class="radio-label d-flex justify-content-start align-items-center">Add
+                                                    Paypal</label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <img src="../assets/images/paypal.png" class="mr-1">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12 d-flex mt-3">
+                                            <button class="gold small cu-pad margin-auto" >
+                                                Continiue
+                                            </button>
+                                        </div>
+
+
                                     </div>
-                                    <div class="d-flex my-1 justify-content-between align-items-center have-dots-item">
-                                        <div class="text small text-left">
-                                            Payment Id
-                                        </div>
-                                        <div class="border-dash flex-shrink-1"></div>
-                                        <div class="text small text-left">
-                                            548446484
-                                        </div>
-                                    </div>
-                                    <div class="d-flex my-1 justify-content-between align-items-center have-dots-item">
-                                        <div class="text small text-left">
-                                            Payment Id
-                                        </div>
-                                        <div class="border-dash flex-shrink-1"></div>
-                                        <div class="text small text-left">
-                                            548446484
-                                        </div>
-                                    </div>
-                                    <div class="d-flex my-1 justify-content-between align-items-center have-dots-item">
-                                        <div class="text small text-left">
-                                            Payment Id
-                                        </div>
-                                        <div class="border-dash flex-shrink-1"></div>
-                                        <div class="text small text-left">
-                                            548446484
-                                        </div>
-                                    </div>
-
-                                    <div class="text mt-3 mb-3">
-                                        Description
-
-                                    </div>
-                                    <div class="small mb-3">
-                                        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor
-                                        Incididunt Ut Labore Et Dolore Magna Aliqua. Egestas Purus Viverra Accumsan In
-                                        Nisl Nisi. Arcu Cursus Vitae Congue Mauris Rhoncus Aenean Vel Elit Scelerisque.
-                                        In Egestas Erat Imperdiet Sed Euismod Nisi Porta Lorem Mollis. Morbi Tristique
-                                        Senectus Et Netus. Mattis Pellentesque Id Nibh Tortor Id Aliquet Lectus Proin.
-                                        Sapien Faucibus Et Molestie Ac Feugiat Sed Lectus Vestibulum. Ullamcorper Velit
-                                        Sed Ullamcorper Morbi Tincidunt Ornare Massa Eget. Dictum Varius Duis At
-                                        Consectetur Lorem. Nisi Vitae Suscipit Tellus Mauris A Diam Maecenas Sed Enim.
-                                        Velit Ut Tortor Pretium Viverra Suspendisse Potenti Nullam. Et Molestie Ac
-                                        Feugiat Sed Lectus. Non Nisi Est Sit Amet Facilisis Magna. Dignissim Diam Quis
-                                        Enim Lobortis Scelerisque Fermentum. Odio Ut Enim Blandit Volutpat Maecenas
-                                        Volutpat. Ornare Lectus Sit Amet Est Placerat In Egestas Erat. Nisi Vitae
-                                        Suscipit Tellus Mauris A Diam Maecenas Sed. Placerat Duis Ultricies Lacus Sed
-                                        Turpis Tincidunt Id Aliquet.
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-sm-12">
-                                    <form>
 
 
-                                        <div class="d-flex justify-content-start align-items-center flex-column  mb-2">
-                                            <div class="text mb-3">
-                                                Select Your Debit Card Or Bank Account
+                                </form>
+
+                            </div>
+                            <div class="dash-box p-4 mb-2">
+                                <table class="table table-borderless small">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" style="width: 15%">Card</th>
+                                        <th scope="col" style="width: 55%">Card Number</th>
+
+                                        <th scope="col" style="width: 30% " class="res-non">Manage Card</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row"><img src="../assets/images/paypal.png" class="mr-1">
+                                        </th>
+                                        <td>0000 0000 0000 0000</td>
+
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center res-non">
+                                                <a class="d-flex justify-content-start align-items-center mr-2">
+                                                    <i class="icon-path-19"></i>
+                                                    <div>
+                                                        Edit Card
+                                                    </div>
+                                                </a>
+                                                <a class="d-flex justify-content-start align-items-center">
+                                                    <i class="icon-path-36"></i>
+                                                    <div>
+                                                        Delete Card
+                                                    </div>
+                                                </a>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="item cu-pad d-flex justify-content-between align-items-center"
-                                                     role="button"
-                                                     data-toggle="modal" data-target="#myModal">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-4" name="radio" type="radio" checked="">
-                                                        <label for="radio-4"
-                                                               class="radio-label d-flex justify-content-start align-items-center">
-
-                                                            <i class="icon-bank-svgrepo-com large-text mr-2"></i>
-                                                            Savings **** 5638
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start smaller align-items-center">
-                                                        1 % Free (Min $0.25, Max $10.00 )
-                                                    </div>
-
-                                                </div>
-
+                                            <div class="d-none text-right justify-content-end res-flex three-dos">
+                                                <i class="icon-ellipsis-vert"></i>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="item cu-pad d-flex justify-content-between align-items-center"
-                                                     role="button"
-                                                     data-toggle="modal" data-target="#myModal">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-5" name="radio" type="radio" checked="">
-                                                        <label for="radio-5"
-                                                               class="radio-label d-flex justify-content-start align-items-center">
+                                        </td>
 
-                                                            <i class="icon-bank-svgrepo-com large-text mr-2"></i>
-                                                            Savings **** 5638
-                                                        </label>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="../assets/images/paypal.png" class="mr-1">
+                                        </th>
+                                        <td>0000 0000 0000 0000</td>
+
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center res-non">
+                                                <a class="d-flex justify-content-start align-items-center mr-2">
+                                                    <i class="icon-path-19"></i>
+                                                    <div>
+                                                        Edit Card
                                                     </div>
-                                                    <div class="d-flex justify-content-start smaller align-items-center">
-                                                        1 % Free (Min $0.25, Max $10.00 )
+                                                </a>
+                                                <a class="d-flex justify-content-start align-items-center">
+                                                    <i class="icon-path-36"></i>
+                                                    <div>
+                                                        Delete Card
                                                     </div>
-
-                                                </div>
-
+                                                </a>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="item cu-pad d-flex justify-content-between align-items-center"
-                                                     role="button"
-                                                     data-toggle="modal" data-target="#myModal">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-6" name="radio" type="radio" checked="">
-                                                        <label for="radio-6"
-                                                               class="radio-label d-flex justify-content-start align-items-center">
-
-                                                            <i class="icon-bank-svgrepo-com large-text mr-2"></i>
-                                                            Savings **** 5638
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start smaller align-items-center">
-                                                        1 % Free (Min $0.25, Max $10.00 )
-                                                    </div>
-
-                                                </div>
-
+                                            <div class="d-none text-right justify-content-end res-flex three-dos">
+                                                <i class="icon-ellipsis-vert"></i>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="item cu-pad d-flex justify-content-between align-items-center"
-                                                     role="button"
-                                                     data-toggle="modal" data-target="#myModal">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-7" name="radio" type="radio" checked="">
-                                                        <label for="radio-7"
-                                                               class="radio-label d-flex justify-content-start align-items-center">
+                                        </td>
 
-                                                            <i class="icon-bank-svgrepo-com large-text mr-2"></i>
-                                                            Savings **** 5638
-                                                        </label>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="../assets/images/paypal.png" class="mr-1">
+                                        </th>
+                                        <td>0000 0000 0000 0000</td>
+
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center res-non">
+                                                <a class="d-flex justify-content-start align-items-center mr-2">
+                                                    <i class="icon-path-19"></i>
+                                                    <div>
+                                                        Edit Card
                                                     </div>
-                                                    <div class="d-flex justify-content-start smaller align-items-center">
-                                                        1 % Free (Min $0.25, Max $10.00 )
+                                                </a>
+                                                <a class="d-flex justify-content-start align-items-center">
+                                                    <i class="icon-path-36"></i>
+                                                    <div>
+                                                        Delete Card
                                                     </div>
-
-                                                </div>
-
+                                                </a>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="item cu-pad d-flex justify-content-between align-items-center"
-                                                     role="button"
-                                                     data-toggle="modal" data-target="#myModal">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-9" name="radio" type="radio" checked="">
-                                                        <label for="radio-9"
-                                                               class="radio-label d-flex justify-content-start align-items-center">
+                                            <div class="d-none text-right justify-content-end res-flex three-dos">
+                                                <i class="icon-ellipsis-vert"></i>
+                                            </div>
+                                        </td>
 
-                                                            <i class="icon-bank-svgrepo-com large-text mr-2"></i>
-                                                            Savings **** 5638
-                                                        </label>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="../assets/images/paypal.png" class="mr-1">
+                                        </th>
+                                        <td>0000 0000 0000 0000</td>
+
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center res-non">
+                                                <a class="d-flex justify-content-start align-items-center mr-2">
+                                                    <i class="icon-path-19"></i>
+                                                    <div>
+                                                        Edit Card
                                                     </div>
-                                                    <div class="d-flex justify-content-start smaller align-items-center">
-                                                        1 % Free (Min $0.25, Max $10.00 )
+                                                </a>
+                                                <a class="d-flex justify-content-start align-items-center">
+                                                    <i class="icon-path-36"></i>
+                                                    <div>
+                                                        Delete Card
                                                     </div>
-
-                                                </div>
-
+                                                </a>
                                             </div>
-
-                                            <div class="col-md-10 col-sm-12 my-2">
-                                                <div class="text text-center small">
-                                                    Or Pay Derectly
-                                                </div>
+                                            <div class="d-none text-right justify-content-end res-flex three-dos">
+                                                <i class="icon-ellipsis-vert"></i>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="item d-flex justify-content-between align-items-center"
-                                                     role="button"
-                                                     data-toggle="modal" data-target="#myModal">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-1" name="radio" type="radio" checked="">
-                                                        <label for="radio-1"
-                                                               class="radio-label d-flex justify-content-start align-items-center">Pay
-                                                            With Your Debit Card</label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center">
-                                                        <img src="assets/images/visa.png" class="mr-1" width="35px">
-                                                        <img src="assets/images/amex.png" class="mr-1" width="35px">
-                                                        <img src="assets/images/mastercard.png" class="mr-1"
-                                                             width="35px">
-                                                        <img src="assets/images/Discover.png" class="mr-1" width="35px">
-                                                    </div>
+                                        </td>
 
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="item d-flex justify-content-between align-items-center">
-                                                    <div class="radio d-flex justify-content-start align-items-center">
-                                                        <input id="radio-3" name="radio" type="radio" checked="">
-                                                        <label for="radio-3"
-                                                               class="radio-label d-flex justify-content-start align-items-center">Add
-                                                            Paypal</label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center">
-                                                        <img src="assets/images/paypal.png" class="mr-1">
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-md-10 col-sm-12 my-2">
-                                                <div class="text text-center small">
-                                                    Or Add New Card/ Bank Account
-                                                </div>
-                                            </div>
-                                            <div class="col-md-10 my-1">
-                                                <button class="gray-b-btn p-2">
-                                                    <i class="icon-bank-svgrepo-com large-text mr-2"></i>
-                                                    Link A Debit Card
-                                                </button>
-                                            </div>
-                                            <div class="col-md-10 my-1">
-                                                <button class="gray-b-btn p-2 ">
-                                                    <i class="icon-path-81 mr-2"></i>
-                                                    Link A Debit Card
-                                                </button>
-                                            </div>
-                                            <div class="col-md-10 d-flex mt-3">
-                                                <button class="blue small cu-pad margin-auto">
-                                                    Payment
-                                                </button>
-                                                <button class="gold small cu-pad margin-auto">
-                                                    Payment
-                                                </button>
-                                            </div>
+                                    </tr>
 
 
-                                        </div>
-
-
-                                    </form>
-
-                                </div>
-
+                                    </tbody>
+                                </table>
                             </div>
 
                         </div>
@@ -619,7 +556,7 @@ Setting
             <div class="main-items">
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -662,7 +599,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -705,7 +642,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -748,7 +685,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -791,7 +728,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -834,7 +771,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -877,7 +814,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -920,7 +857,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -963,7 +900,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -1006,7 +943,7 @@ Setting
                 </div>
                 <div class="item smaller d-flex justify-content-start align-items-center">
                     <div class="image">
-                        <img src="assets/images/avatar.png" class="full full-h">
+                        <img src="../assets/images/avatar.png" class="full full-h">
                     </div>
                     <div class="info d-flex justify-content-start flex-column">
                         <div class="d-flex justify-content-between">
@@ -1055,7 +992,7 @@ Setting
             <div class="d-flex justify-content-around align-items-center head-box">
                 <i class="icon-left-open back pointer"></i>
                 <div class="image mr-1">
-                    <img src="assets/images/avatar.png" class="full">
+                    <img src="../assets/images/avatar.png" class="full">
                 </div>
                 <div class=" mr-2 smaller">
                     Sara jackson
@@ -1195,7 +1132,7 @@ Setting
         <div class="main-items">
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1226,7 +1163,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1257,7 +1194,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1298,7 +1235,7 @@ Setting
         <div class="main-items">
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1329,7 +1266,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1361,7 +1298,7 @@ Setting
 
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1392,7 +1329,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1423,7 +1360,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1455,7 +1392,7 @@ Setting
 
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1487,7 +1424,7 @@ Setting
 
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1519,7 +1456,7 @@ Setting
 
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1550,7 +1487,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1581,7 +1518,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1612,7 +1549,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1644,7 +1581,7 @@ Setting
 
             <div class="item smaller d-flex justify-content-start align-items-center new">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1675,7 +1612,7 @@ Setting
             </div>
             <div class="item smaller d-flex justify-content-start align-items-center ">
                 <div class="image">
-                    <img src="assets/images/avatar.png" class="full full-h">
+                    <img src="../assets/images/avatar.png" class="full full-h">
                 </div>
                 <div class="info d-flex justify-content-start flex-column">
                     <div class="d-flex justify-content-between">
@@ -1736,10 +1673,10 @@ Setting
                         <div class="text mx-2">
                             Pay With Card
                         </div>
-                        <img src="assets/images/visa.png" class="mx-2" width="40px">
-                        <img src="assets/images/amex.png" class="mx-2" width="40px">
-                        <img src="assets/images/mastercard.png" class="mx-2" width="40px">
-                        <img src="assets/images/Discover.png" class="mx-2" width="40px">
+                        <img src="../assets/images/visa.png" class="mx-2" width="40px">
+                        <img src="../assets/images/amex.png" class="mx-2" width="40px">
+                        <img src="../assets/images/mastercard.png" class="mx-2" width="40px">
+                        <img src="../assets/images/Discover.png" class="mx-2" width="40px">
                     </div>
 
                 </div>
@@ -1798,9 +1735,9 @@ Setting
 
 
 <script type="text/javascript"
-        src="assets/js/jquery.min.js"></script>
+        src="../assets/js/jquery.min.js"></script>
 <script type="text/javascript"
-        src="assets/js/bootstrap.min.js"></script>
+        src="../assets/js/bootstrap.min.js"></script>
 <script>
     $(document).on('click', function () {
         $('header .header-item').removeClass('active');

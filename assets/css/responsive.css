@@ -41,6 +41,19 @@
 }
 
 @media screen and (max-width: 767.98px) {
+    .notification-box {
+        position: fixed;
+        right: -3px;
+        padding: 0 25px 0 15px;
+    }
+
+    .subject-tuught .item {
+        margin: 13px 5px;
+    }
+
+    .login .over-text {
+        top: 0% !important;
+    }
 
     .have-left-shadow-orange:after, .have-right-shadow-orange:before, .have-left-shadow-green:after, .have-right-shadow-green:before {
         display: none;
@@ -112,7 +125,15 @@
         width: 110%;
         margin-left: -5%;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
+    }
+
+    .student-dash-item i {
+        font-size: 30px;
+        position: absolute;
+        top: 13px;
+        right: 3px;
+
     }
 
     .cu-res-view .dash-box.autor-activities {
@@ -124,6 +145,23 @@
         height: 110px;
         display: inline-flex;
         align-content: center;
+    }
+
+    .student-dash-item {
+        margin: 0 15px;
+        padding: 25px 100px;
+        cursor: pointer;
+        float: left;
+        height: 110px;
+        display: inline-flex;
+        align-content: center;
+        font-size: 15px;
+        width: 185px;
+        margin-right: -20px;
+    }
+
+    .student-dash-item .title-md {
+        font-size: 13px;
     }
 
     .cu-res-view .dash-box.autor-activities .small {
@@ -280,22 +318,31 @@
         margin-left: 0 !important;
     }
 
+    .j-c-sm-start {
+        -ms-flex-pack: start !important;
+        justify-content: start !important;
+    }
+
     .j-c-sm-end {
         -ms-flex-pack: end !important;
         justify-content: end !important;
-    }
-
-    .res-flex {
-        display: flex !important;
     }
 
     .align-i-e {
         align-items: flex-end !important;
     }
 
+    .align-i-s {
+        align-items: start !important;
+    }
+
     .j-c-sm-center {
         -ms-flex-pack: center !important;
         justify-content: center !important;
+    }
+
+    .mt-sm-3 {
+        margin-top: 1rem !important;
     }
 
     .mt-ne50 {
@@ -469,6 +516,25 @@
         padding-top: 80px !important;
     }
 
+    .dash-box.no-res-bg {
+        background-color: rgba(192, 192, 192, 0);
+    }
+
+    .text-just-4 {
+        max-height: 7.5rem;
+        overflow: hidden;
+    }
+
+    .Schedule .item {
+        width: 40px;
+        font-size: 11px !important;
+    }
+
+    .Schedule .item .btns-silver button {
+        height: 30px;
+        font-size: 9px;
+    }
+
     section.item-cards .item-card {
         margin-bottom: 70px;
     }
@@ -505,7 +571,15 @@
         width: 130px !important;
     }
 
-    .profile-box .progress.gold .progress-bar:last-child {
+    .profile-box .progress.w100 .progress-bar {
+        width: 200px !important;
+    }
+
+    .profile-box .progress.w100 {
+        padding-right: 13%;
+    }
+
+    .profile-box .progress.gold .progress-bar:last-child, .profile-box .progress.w100 .progress-bar:last-child {
         width: 0 !important;
     }
 
@@ -519,6 +593,47 @@
         right: 15px;
         bottom: -10px;
     }
+
+    .res-flex {
+        display: flex !important;
+    }
+
+    .profile-box .courses-card .image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .flex-res-wrap {
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    }
+
+    .add-card table thead th {
+        width: 45% !important;
+    }
+
+    .add-card table thead th:last-child {
+        width: 10% !important;
+    }
+
+    .border-right {
+        border-right: 0 !important;
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .message-dash-box {
+        background-color: rgba(255, 255, 255, 0);
+
+    }
+
+    .notification-dash-box, .user-message-box {
+        background-color: white;
+    }
+
+    .res-mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
