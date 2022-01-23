@@ -1781,6 +1781,18 @@ Setting
         e.stopPropagation()
 
     });
+    $(".profile-box .header-part .progress-bar").on("click", function (e) {
+        var x = $(this).attr('data-assets');
+
+        $(this).closest('.profile-box').find(".main-part .main-item").removeClass('active');
+        $(this).closest('.profile-box').find(".header-part .progress-bar").removeClass('active');
+        // alert(x)
+        $(this).addClass('active');
+
+        $(".profile-box .header-part .progress-bar").closest('.profile-box').find('#' + x).addClass('active')
+
+    });
+
     var input = $('.number-input input'),
         input_val = parseInt(input.val()),
         btn_add = $('.add'),

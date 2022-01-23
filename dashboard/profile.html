@@ -339,6 +339,8 @@ Setting
 
                         <div class="col-md-12">
                             <div class="profile-box mb-4">
+
+                                <!--tab head-->
                                 <div class="header-part cu-res-view small d-flex justify-content-between align-items-center">
                                     <div data-assets="Personal-Info" class="head-item ">
                                         Personal Info
@@ -365,6 +367,10 @@ Setting
                                         Change Password
                                     </div>
                                 </div>
+                                <!--//-->
+
+
+                                <!--steper-->
                                 <div class="header-part has-cu-pd-ma   d-none res-non cu-res-view small mb-4 d-flex justify-content-between align-items-center p-3">
 
 
@@ -409,6 +415,8 @@ Setting
 
                                     </div>
                                 </div>
+                                <!--//-->
+
 
                                 <div class="main-part dash-box p-4">
                                     <div id="Personal-Info"
@@ -2942,6 +2950,18 @@ Setting
         e.stopPropagation()
 
     });
+    $(".profile-box .header-part .progress-bar").on("click", function (e) {
+        var x = $(this).attr('data-assets');
+
+        $(this).closest('.profile-box').find(".main-part .main-item").removeClass('active');
+        $(this).closest('.profile-box').find(".header-part .progress-bar").removeClass('active');
+        // alert(x)
+        $(this).addClass('active');
+
+        $(".profile-box .header-part .progress-bar").closest('.profile-box').find('#' + x).addClass('active')
+
+    });
+
 </script>
 
 </body>
